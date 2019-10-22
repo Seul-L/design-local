@@ -3,3 +3,34 @@
 
 // start styling in this scss file and do not touch css files (It's auto generated).
 
+nav {
+  background-color: $black;
+  height: 6rem;
+  width: 100vw;
+
+  * {
+    background-color: inherit;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    padding: 0 2.4rem;
+  }
+
+  li {
+    align-items: center;
+    list-style: none;
+    padding: 0 1.6rem;
+
+    &:first-of-type {
+      margin-right: auto;
+    }
+  }
+
+  a {
+    color: $white;
+    text-decoration: none;
+    font-style: normal;
+  }
+}
