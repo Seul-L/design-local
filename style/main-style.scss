@@ -35,3 +35,24 @@ nav {
     font-style: normal;
   }
 }
+
+.hero {
+  border: 1px solid $teal;
+  display: flex;
+  justify-content: center;
+  padding: 8rem 0;
+
+  .hero-text {
+    width: 50vw;
+  }
+
+  .hero-img {
+    background-color: $light-grey;
+    margin-left: 4rem;
+
+    img {
+      width: 40rem;
+      height: auto;
+    }
+  }
+}
