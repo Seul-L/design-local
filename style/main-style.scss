@@ -29,6 +29,10 @@ nav {
     &:first-of-type {
       margin-right: auto;
     }
+
+    img {
+      max-width: 15rem;
+    }
   }
 
   a {

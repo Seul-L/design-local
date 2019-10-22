@@ -97,6 +97,9 @@ nav li {
 nav li:first-of-type {
   margin-right: auto;
 }
+nav li img {
+  max-width: 15rem;
+}
 nav a {
   color: #FEFEFE;
   text-decoration: none;
