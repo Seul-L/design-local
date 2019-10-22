@@ -4,8 +4,11 @@
 // start styling in this scss file and do not touch css files (It's auto generated).
 
 nav {
+  position: sticky;
   background-color: $black;
   height: 6rem;
+  padding: 1.6rem 0;
+  top: 0;
   width: 100vw;
 
   * {
@@ -32,5 +35,31 @@ nav {
     color: $white;
     text-decoration: none;
     font-style: normal;
+  }
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  padding: 8rem 0;
+
+  .hero-text {
+    width: 50vw;
+
+    p {
+      margin-top: 5.6rem;
+      padding-right: 2.4rem;
+    }
+  }
+
+  .hero-img {
+    height: auto;
+    margin-left: 4rem;
+    width: 48rem;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
 }
