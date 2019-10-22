@@ -23,8 +23,8 @@ main {
 }
 
 h1 {
-  font-size: 4.8rem;
-  font-weight: 500;
+  font-size: 5.6rem;
+  font-weight: 600;
   line-height: 6.4rem;
 }
 
@@ -74,9 +74,11 @@ img {
 }
 
 nav {
+  position: sticky;
   background-color: #19191E;
   height: 6rem;
   padding: 1.6rem 0;
+  top: 0;
   width: 100vw;
 }
 nav * {
@@ -102,7 +104,6 @@ nav a {
 }
 
 .hero {
-  border: 1px solid #00CAB2;
   display: flex;
   justify-content: center;
   padding: 8rem 0;
@@ -110,12 +111,17 @@ nav a {
 .hero .hero-text {
   width: 50vw;
 }
+.hero .hero-text p {
+  margin-top: 5.6rem;
+  padding-right: 2.4rem;
+}
 .hero .hero-img {
-  background-color: #E1E2EB;
+  height: auto;
   margin-left: 4rem;
+  width: 48rem;
 }
 .hero .hero-img img {
-  width: 40rem;
+  width: 100%;
   height: auto;
 }
 
