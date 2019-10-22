@@ -72,6 +72,7 @@ img {
 nav {
   background-color: #19191E;
   height: 6rem;
+  padding: 1.6rem 0;
   width: 100vw;
 }
 nav * {
