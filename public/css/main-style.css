@@ -125,4 +125,12 @@ nav a {
   height: auto;
 }
 
+.our-story {
+  display: flex;
+  justify-content: center;
+}
+.our-story div {
+  width: 50%;
+}
+
 /*# sourceMappingURL=main-style.css.map */
