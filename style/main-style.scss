@@ -251,6 +251,67 @@
   }
 }
 
+.projects {
+  display: flex;
+  flex-direction: column;
+
+  .header--long {
+    background-color: $light-blue;
+    margin-bottom: 4.8rem;
+
+    * {
+      background-color: inherit;
+    }
+  }
+}
+
+.project--container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 8rem;
+}
+
+.project--items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1.6rem;
+  padding: 0 2.4rem;
+  color: $dark-blue;
+}
+
+.logo--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20rem;
+  padding: 1.6rem 2.4rem;
+  margin-top: 2.4rem;
+
+  img {
+    width: 60%;
+    background-color: transparent;
+    object-fit: scale-down;
+  }
+}
+
+.museum {
+  background-color: #E3223C;
+  box-shadow: 1px 1px 8px 1px $light-grey;
+}
+
+.butterfly {
+  width: 20rem;
+  height: 12rem;
+  box-shadow: 1px 1px 8px 1px $light-grey;
+  background-color: $white;
+
+  img {
+    width: 100%;
+  }
+}
+
 .getting-involved {
 
   .header--long {

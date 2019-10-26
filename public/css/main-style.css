@@ -295,6 +295,63 @@ img {
   font-weight: 300;
 }
 
+.projects {
+  display: flex;
+  flex-direction: column;
+}
+.projects .header--long {
+  background-color: #D8E0ED;
+  margin-bottom: 4.8rem;
+}
+.projects .header--long * {
+  background-color: inherit;
+}
+
+.project--container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 8rem;
+}
+
+.project--items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1.6rem;
+  padding: 0 2.4rem;
+  color: #3B5589;
+}
+
+.logo--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20rem;
+  padding: 1.6rem 2.4rem;
+  margin-top: 2.4rem;
+}
+.logo--container img {
+  width: 60%;
+  background-color: transparent;
+  object-fit: scale-down;
+}
+
+.museum {
+  background-color: #E3223C;
+  box-shadow: 1px 1px 8px 1px #E6E6EA;
+}
+
+.butterfly {
+  width: 20rem;
+  height: 12rem;
+  box-shadow: 1px 1px 8px 1px #E6E6EA;
+  background-color: #FEFEFE;
+}
+.butterfly img {
+  width: 100%;
+}
+
 .getting-involved .header--long {
   background-color: #D4F2EF;
   margin-bottom: 4.8rem;
