@@ -30,6 +30,12 @@ h2 {
   line-height: 3.2rem;
 }
 
+h3 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.4rem;
+}
+
 a {
   color: #3B5589;
   font-style: italic;
@@ -287,6 +293,32 @@ img {
 .what--column p {
   color: #19191E;
   font-weight: 300;
+}
+
+.getting-involved .header--long {
+  background-color: #D4F2EF;
+  margin-bottom: 4.8rem;
+}
+.getting-involved .header--long * {
+  background-color: inherit;
+}
+.getting-involved h2 {
+  color: #006559;
+  padding-left: 20rem;
+}
+
+.benefit-columns-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.benefit--columns {
+  width: 40rem;
+  margin: 0 2.4rem;
+  padding: 1.6rem 0;
+}
+.benefit--columns:first-of-type {
+  padding-top: 0;
 }
 
 /*# sourceMappingURL=main-style.css.map */
