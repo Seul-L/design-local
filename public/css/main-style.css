@@ -221,7 +221,7 @@ img {
   font-weight: 400;
 }
 
-.who-columns--container {
+.columns--container {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -261,6 +261,32 @@ img {
   font-weight: 200;
   font-size: 1.8rem;
   line-height: 3.2rem;
+}
+
+.what-you-can-do {
+  padding: 8rem 0;
+}
+.what-you-can-do .header--long {
+  background-color: #FFE0D8;
+}
+.what-you-can-do .header--long * {
+  background-color: inherit;
+}
+.what-you-can-do .columns--container:last-of-type {
+  padding: 0;
+}
+
+.what--column {
+  width: 32rem;
+  margin: 0 3.2rem;
+}
+.what--column h2 {
+  color: #8E483A;
+  margin-bottom: 1.6rem;
+}
+.what--column p {
+  color: #19191E;
+  font-weight: 300;
 }
 
 /*# sourceMappingURL=main-style.css.map */
