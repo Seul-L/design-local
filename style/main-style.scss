@@ -343,3 +343,30 @@
     padding-top: 0;
   }
 }
+
+footer {
+  background-color: $black;
+  color: $white;
+  padding: 2.4rem 20rem;
+
+
+  * {
+    background-color: inherit;
+  }
+
+  p:first-of-type {
+    color: $light-yellow;
+    font-size: 1.2rem;
+  }
+
+  p:last-of-type {
+    font-size: 1.4rem;
+    font-weight: 200;
+    margin-top: 2.4rem;
+    color: $light-grey;
+  }
+
+  img {
+    width: 16rem;
+  }
+}

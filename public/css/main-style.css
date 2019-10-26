@@ -378,4 +378,26 @@ img {
   padding-top: 0;
 }
 
+footer {
+  background-color: #19191E;
+  color: #FEFEFE;
+  padding: 2.4rem 20rem;
+}
+footer * {
+  background-color: inherit;
+}
+footer p:first-of-type {
+  color: #FFE9B4;
+  font-size: 1.2rem;
+}
+footer p:last-of-type {
+  font-size: 1.4rem;
+  font-weight: 200;
+  margin-top: 2.4rem;
+  color: #E6E6EA;
+}
+footer img {
+  width: 16rem;
+}
+
 /*# sourceMappingURL=main-style.css.map */
