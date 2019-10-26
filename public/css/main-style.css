@@ -12,14 +12,10 @@ html {
 
 body {
   color: #19191E;
-  font-size: 1.8rem;
-  font-weight: 400;
+  font-size: 1.6rem;
+  font-weight: 300;
   height: 100vh;
-  line-height: 3.2rem;
-}
-
-main {
-  padding: 6rem;
+  line-height: 2.6rem;
 }
 
 h1 {
@@ -41,13 +37,17 @@ h3 {
 }
 
 a {
-  color: #4A6BAC;
+  color: #3b5589;
   font-style: italic;
   text-decoration: underline;
 }
 
+.text--cursive {
+  font-family: "Abril Fatface", cursive;
+}
+
 .caption {
-  color: #4A6BAC;
+  color: #3b5589;
   font-size: 1.2rem;
   font-style: italic;
   font-weight: 300;
@@ -59,7 +59,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 2px solid #E1E2EB;
+  border-top: 2px solid #E6E6EA;
   margin: 24px 0;
   padding: 0;
 }
@@ -73,67 +73,117 @@ img {
   object-fit: cover;
 }
 
-nav {
-  position: sticky;
-  background-color: #19191E;
-  height: 6rem;
-  padding: 1.6rem 0;
-  top: 0;
-  width: 100vw;
+.text--bold {
+  font-weight: 500;
 }
-nav * {
-  background-color: inherit;
+
+.text--large {
+  font-size: 3.6rem;
 }
-nav ul {
-  display: flex;
-  justify-content: center;
-  padding: 0 2.4rem;
-}
-nav li {
-  align-items: center;
-  list-style: none;
-  padding: 0 1.6rem;
-}
-nav li:first-of-type {
-  margin-right: auto;
-}
-nav li img {
-  max-width: 15rem;
-}
-nav a {
-  color: #FEFEFE;
-  text-decoration: none;
-  font-style: normal;
+
+.bg--opacity {
+  opacity: 0.7;
 }
 
 .hero {
+  align-items: center;
+  background-color: #19191E;
+  color: #FEFEFE;
   display: flex;
   justify-content: center;
-  padding: 8rem 0;
+  width: 100vw;
+  padding: 10rem 0;
+}
+.hero * {
+  background-color: inherit;
 }
 .hero .hero-text {
-  width: 50vw;
+  width: 40vw;
+}
+.hero .hero-text h3 {
+  color: #ffe9b4;
 }
 .hero .hero-text p {
   margin-top: 5.6rem;
-  padding-right: 2.4rem;
-}
-.hero .hero-img {
-  height: auto;
-  margin-left: 4rem;
-  width: 48rem;
-}
-.hero .hero-img img {
-  width: 100%;
-  height: auto;
 }
 
-.our-story {
+.our-story-1 {
   display: flex;
+  box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.8);
+  background-image: url("../assets/A_final_pic_from_Waterloo_Region_(37836919612).jpg");
+  background-color: #FEFEFE;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
   justify-content: center;
+  background-color: #FEFEFE;
+  padding: 8rem 8rem 0rem 8rem;
 }
-.our-story div {
-  width: 50%;
+
+.our-story-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #FEFEFE;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 8rem;
+}
+
+.box--container {
+  align-items: center;
+  background-color: transparent;
+  display: flex;
+  margin: 0 auto;
+}
+
+.header--front {
+  padding: 0;
+  position: absolute;
+  z-index: 2;
+}
+
+.box--header {
+  display: flex;
+  align-items: center;
+  background-color: #D4F2EF;
+  text-align: right;
+  width: 20rem;
+  height: 20rem;
+  padding: 1.6rem;
+  font-size: 3.2rem;
+  line-height: 4.3rem;
+}
+.box--header * {
+  align-items: center;
+  background-color: inherit;
+}
+
+.box--paragraph {
+  background-color: #E6E6EA;
+  max-width: 65rem;
+  padding: 3.2rem 2.4rem 3.2rem 4.8rem;
+  margin-left: 18rem;
+}
+.box--paragraph * {
+  background-color: inherit;
+}
+
+.credit {
+  background-color: transparent;
+  color: #7c7c7f;
+  display: inline-block;
+  font-size: 1.2rem;
+  max-width: 94rem;
+  text-align: right;
+  margin-top: 7rem;
+  margin-bottom: 0;
+}
+.credit * {
+  background-color: inherit;
+  color: inherit;
 }
 
 /*# sourceMappingURL=main-style.css.map */
