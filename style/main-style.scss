@@ -16,30 +16,28 @@
 }
 
 .box--container {
-
-  @include sm {
-    align-items: flex-start;
-  }
-
   align-items: center;
   background-color: transparent;
   display: flex;
   margin: 0 auto;
+
+  @include sm {
+    align-items: flex-start;
+  }
 }
 
 .header--front {
+  padding: 0;
+  position: absolute;
+  z-index: 2;
 
   @include sm {
     margin-top: 4rem;
   }
 
   @include md {
-    margin-top: 8rem;
+    margin-top: 0rem;
   }
-
-  padding: 0;
-  position: absolute;
-  z-index: 2;
 }
 
 .header--box {
@@ -72,6 +70,14 @@
 }
 
 .box--paragraph {
+  background-color: $light-grey;
+  max-width: 65rem;
+  padding: 3.2rem 2.4rem 3.2rem 4.8rem;
+  margin-left: 18rem;
+
+  * {
+    background-color: inherit;
+  }
 
   @include sm {
     margin-top: 20rem;
@@ -84,15 +90,6 @@
     max-width: 65rem;
     padding: 3.2rem 2.4rem 3.2rem 3.2rem;
     margin: 4rem auto 4rem 18rem;
-  }
-
-  background-color: $light-grey;
-  max-width: 65rem;
-  padding: 3.2rem 2.4rem 3.2rem 4.8rem;
-  margin-left: 18rem;
-
-  * {
-    background-color: inherit;
   }
 }
 
@@ -125,13 +122,14 @@
   display: flex;
   justify-content: center;
   width: 100vw;
+  padding: 8rem;
 
   * {
     background-color: inherit;
   }
 
   p {
-    width: 40vw;
+    max-width: 50vw;
     font-size: 1.8rem;
     line-height: 3.2rem;
 
@@ -147,6 +145,29 @@
       font-weight: 200;
     }
   }
+
+  img {
+    max-width: 50%;
+
+    @include sm {
+      max-width: 100%;
+    }
+  }
+
+  @include sm {
+    margin: 0 auto;
+    padding: 8rem 2.4rem;
+
+    p {
+      min-width: 80vw;
+    }
+  }
+
+  @include md {
+    padding: 8rem 4.8rem;
+  }
+
+
 }
 
 .our-story-1 {
@@ -174,6 +195,14 @@
   .header--box {
     background-color: $light-teal;
   }
+
+  @include sm {
+    padding: 4rem 0;
+  }
+
+  @include md {
+    padding: 4rem;
+  }
 }
 
 .our-story-2 {
@@ -196,19 +225,19 @@
   }
 
   .box--paragraph {
-    padding: 4rem 2.4rem 4rem 4.8rem;
+    padding: 8rem 2.4rem 4rem 4.8rem;
+  }
+
+  @include sm {
+    padding: 4rem 0;
+  }
+
+  @include md {
+    padding: 4rem;
   }
 }
 
 .credit {
-
-  @include sm {
-    margin-top: 2rem;
-  }
-
-  @include md {
-    margin-top: 0;
-  }
 
   background-color: transparent;
   color: $grey;
@@ -222,6 +251,15 @@
   * {
     background-color: inherit;
     color: inherit;
+  }
+
+  @include sm {
+    margin-top: 2rem;
+    padding-right: 2.4rem;
+  }
+
+  @include md {
+    margin-top: 0;
   }
 }
 
@@ -237,12 +275,11 @@
   }
 
   .header--box {
+    background-color: $yellow !important;
 
     @include md {
       margin-left: 4.8rem;
     }
-
-    background-color: $yellow !important;
   }
 
   .header--long {
@@ -257,6 +294,10 @@
   }
 
   .box--paragraph {
+    background-color: $light-grey;
+    color: $black;
+    padding: 7.2rem 2.4rem 7.2rem 4.8rem;
+    font-weight: 400;
 
     @include sm {
       padding: 6.4rem 1.6rem 4.8rem 3.2rem;
@@ -267,46 +308,27 @@
       margin: 6.4rem 2.4rem 4.8rem 22rem;
       padding: 6.4rem 2.4rem 6.4rem 4.8rem;
     }
-
-    background-color: $light-grey;
-    color: $black;
-    padding: 7.2rem 2.4rem 7.2rem 4.8rem;
-    font-weight: 400;
   }
 }
 
 .columns--container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 4.8rem 0;
 
   @include sm {
     flex-direction: column;
   }
 
-  @include lg {
-    flex-direction: row;
+  @include md {
+    flex-direction: column;
   }
-
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 4.8rem 0;
 }
 
 .who-column {
-
-  @include sm {
-    margin-bottom: 3.2rem;
-  }
-
-  @include md {
-    width: 40rem;
-    margin: 0 auto;
-    margin-bottom: 3.2rem;
-  }
-
-  @include lg {
-    width: 28rem;
-    margin: 0 2.4rem;
-  }
+  width: 28rem;
+  margin: 0 2.4rem;
 
   h2 {
     color: $light-yellow;
@@ -317,9 +339,44 @@
     color: $white;
     font-weight: 200;
   }
+
+  @include sm {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 3.2rem;
+  }
+
+  @include md {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 3.2rem;
+  }
+
 }
 
 .imagine {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 32rem;
+  padding: 8rem 0;
+
+  p {
+    text-align: center;
+    color: $white;
+
+    &:first-of-type {
+      font-size: 4.8rem;
+    }
+
+    &:last-of-type {
+      width: 48vw;
+      margin: 4.8rem auto;
+      font-weight: 200;
+      font-size: 1.8rem;
+      line-height: 3.2rem;
+    }
+  }
 
   @include sm {
     padding: 2.4rem;
@@ -342,31 +399,19 @@
     }
   }
 
-  @include lg {
-    min-width: 32rem;
-    padding: 8rem 0;
-
+  @include md {
     p {
-      text-align: center;
-      color: $white;
-
       &:first-of-type {
-        font-size: 4.8rem;
+        font-size: 4rem;
+        line-height: 5.6rem;
       }
 
       &:last-of-type {
-        width: 48vw;
-        margin: 4.8rem auto;
-        font-weight: 200;
-        font-size: 1.8rem;
-        line-height: 3.2rem;
+        width: 80%;
       }
     }
   }
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .what-you-can-do {
@@ -382,10 +427,33 @@
 
   .columns--container:last-of-type {
     padding: 0;
+
+    // @include md {
+    //   padding: 4.8rem 0 0 0;
+    // }
+  }
+
+  @include md {
+    .columns--container {
+      flex-direction: row;
+    }
   }
 }
 
 .what--column {
+
+  width: 32rem;
+  margin: 0 3.2rem;
+
+  h2 {
+    color: $dark-coral;
+    margin-bottom: 1.6rem;
+  }
+
+  p {
+    color: $black;
+    font-weight: 300;
+  }
 
   @include sm {
     width: 100%;
@@ -398,20 +466,13 @@
     }
   }
 
-  @include lg {
-    width: 32rem;
-    margin: 0 3.2rem;
+  .columns--container {
+    @include md {
+      margin: 0 auto;
+      padding: 2.4rem 3.2rem;
+    }
   }
 
-  h2 {
-    color: $dark-coral;
-    margin-bottom: 1.6rem;
-  }
-
-  p {
-    color: $black;
-    font-weight: 300;
-  }
 }
 
 .projects {
@@ -429,104 +490,100 @@
 }
 
 .project--container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
 
   @include sm {
     flex-direction: column;
   }
-
-  @include lg {
-    flex-direction: row;
-  }
-
-  display: flex;
-  justify-content: center;
-  margin-bottom: 8rem;
-
 }
 
 .project--items {
-
-  @include sm {
-    align-items: center;
-  }
-
-  @include lg {
-    align-items: center;
-  }
-
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin: 1.6rem;
-  padding: 0 2.4rem;
   color: $dark-blue;
+  padding: 0 2.4rem;
+  padding-bottom: 6.4rem;
+
+
+  @include sm {
+    justify-content: space-around;
+    padding-bottom: 2.4rem;
+  }
+
+  @include md {
+    justify-content: space-around;
+  }
 }
 
 .logo--container {
-
-  @include sm {
-    width: 80%;
-    margin-top: 1.6rem;
-  }
-
-  @include lg {
-    margin-top: 2.4rem;
-    width: 20rem;
-  }
-
+  margin-top: 2.4rem;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1.6rem 2.4rem;
 
   img {
-    width: 60%;
+    width: 50%;
     background-color: transparent;
     object-fit: scale-down;
   }
 }
 
 .museum {
+  width: 40rem;
+  height: 30rem;
   background-color: #E3223C;
   box-shadow: 1px 1px 8px 1px $light-grey;
   margin-bottom: 2.4rem;
-}
 
-.butterfly {
   @include sm {
-    height: 14rem;
-    width: 80%;
+    width: 30rem;
+    height: 20rem;
   }
 
   @include md {
-    height: 26rem;
+    width: 30rem;
+    height: 20rem;
   }
+}
 
-  @include lg {
-    width: 20rem;
-    height: 12rem;
-  }
-
+.butterfly {
+  width: 40rem;
+  height: 30rem;
   box-shadow: 1px 1px 8px 1px $light-grey;
   background-color: $white;
+  margin-bottom: 2.4rem;
 
   img {
     width: 80%;
   }
+
+  @include sm {
+    width: 30rem;
+    height: 20rem;
+  }
+
+  @include md {
+    width: 30rem;
+    height: 20rem;
+  }
 }
 
 .getting-involved {
+  display: flex;
+  flex-direction: column;
 
-  @include sm {
-    h2 {
-      padding-left: 1.6rem;
-    }
-  }
+  h2 {
+    color: $dark-teal;
+    margin: 0 auto;
 
-  @include lg {
-    h2 {
-      color: $dark-teal;
-      padding-left: 20rem;
+    @include sm {
+      padding-left: 2.4rem;
     }
   }
 
@@ -538,63 +595,62 @@
       background-color: inherit;
     }
   }
+
+  @include sm {
+    .columns--container {
+      flex-direction: column;
+    }
+  }
+
+  @include md {
+    .columns--container {
+      flex-direction: row;
+    }
+  }
 }
 
 .benefit-columns-container {
   display: flex;
   flex-direction: column;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+
+  @include sm {
+    flex-direction: row;
+  }
+
+  @include md {
+    flex-direction: row;
+  }
 }
 
 .benefit--columns {
+  width: 50rem;
+  margin: 0 auto;
+  padding: 1.6rem 2.4rem;
 
-  @include sm {
-    width: 100%;
-    padding: 1.6rem;
-    margin: 0 auto;
+  &:first-of-type {
+    padding-top: 0;
 
-    &:first-of-type {
+    @include sm {
       padding-top: 1.6rem;
     }
   }
 
-  @include lg {
-    width: 40rem;
-    margin: 0 2.4rem;
-    padding: 1.6rem 0;
+  @include sm {
+    width: 90%;
+    padding: 1.6rem 3.2rem;
   }
 
-  &:first-of-type {
-    padding-top: 0;
+  @include md {
+    width: 35rem;
+    padding: 1.6rem 3.2rem;
   }
+
 }
 
 footer {
-
-  @include sm {
-    width: 100vw;
-    padding: 3.2rem 2.4rem;
-
-    p:first-of-type {
-      color: $light-yellow;
-      font-size: 1.2rem;
-    }
-  
-    p:last-of-type {
-      font-size: 1.4rem;
-      font-weight: 200;
-      margin-top: 2.4rem;
-      color: $light-grey;
-    }
-  
-    img {
-      width: 16rem;
-    }
-  }
-
-  @include lg {
-    padding: 2.4rem 8rem;
-  }
-
+  padding: 2.4rem 8rem;
   background-color: $black;
   color: $white;
 
@@ -617,4 +673,25 @@ footer {
   img {
     width: 20rem;
   }
+
+  @include sm {
+    padding: 3.2rem 2.4rem;
+
+    p:first-of-type {
+      color: $light-yellow;
+      font-size: 1.2rem;
+    }
+
+    p:last-of-type {
+      font-size: 1.4rem;
+      font-weight: 200;
+      margin-top: 2.4rem;
+      color: $light-grey;
+    }
+
+    img {
+      width: 16rem;
+    }
+  }
+
 }
