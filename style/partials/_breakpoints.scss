@@ -4,14 +4,14 @@ $screen-size-lg: 1024px;
 
 // Small devices
 @mixin sm {
-  @media (min-width: #{$screen-size-sm}) {
+  @media (min-width: #{$screen-size-sm}) and (max-width: #{$screen-size-md}) {
       @content;
   }
 }
 
 // Medium devices
 @mixin md {
-  @media (min-width: #{$screen-size-md}) {
+  @media (min-width: #{$screen-size-md}) and (max-width: #{$screen-size-lg}) {
       @content;
   }
 }
