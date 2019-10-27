@@ -1,0 +1,24 @@
+$screen-size-sm: 320px;
+$screen-size-md: 640px;
+$screen-size-lg: 1024px;
+
+// Small devices
+@mixin sm {
+  @media (min-width: #{$screen-size-sm}) {
+      @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (min-width: #{$screen-size-md}) {
+      @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (min-width: #{$screen-size-lg}) {
+      @content;
+  }
+}
