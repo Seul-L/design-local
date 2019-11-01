@@ -508,7 +508,11 @@
   color: $dark-blue;
   padding: 0 2.4rem;
   padding-bottom: 6.4rem;
+  width: 40rem;
 
+  p {
+    color: $black;
+  }
 
   @include sm {
     justify-content: space-around;
@@ -527,8 +531,8 @@
   align-items: center;
   padding: 1.6rem 2.4rem;
 
-  img {
-    width: 50%;
+  a, img {
+    width: 70%;
     background-color: transparent;
     object-fit: scale-down;
   }
