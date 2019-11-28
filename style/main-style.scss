@@ -3,10 +3,41 @@
 @import 'partials/breakpoints';
 
 // start styling in this scss file and do not touch css files (It's auto generated).
+
+// For all
 main {
   margin: 0 auto;
+  overflow: hidden;
 }
 
+.container {
+  max-width: 80%;
+  padding: 8rem;
+  margin: 0 auto;
+
+  @include md {
+    max-width: 100%;
+    padding: 8rem;
+  }
+
+  @include sm {
+    max-width: 100%;
+    padding: 4rem 3.2rem;
+  }
+}
+
+.box--container {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+
+  @include sm {
+    align-items: flex-start;
+    width: 100%;
+  }
+}
+
+// hero
 .hero-container {
   position: relative;
 
@@ -29,7 +60,7 @@ main {
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 16%;
+    width: 12%;
     height: auto;
 
     @include sm {
@@ -39,8 +70,8 @@ main {
   }
 
   .hero {
-    align-items: center;
     display: flex;
+    align-items: center;
     justify-content: center;
     width: 100vw;
     padding: 8rem;
@@ -64,6 +95,10 @@ main {
     img {
       max-width: 50%;
 
+      @include md {
+        max-width: 60%;
+      }
+
       @include sm {
         max-width: 100%;
       }
@@ -84,23 +119,11 @@ main {
   }
 }
 
-.box--container {
-  background-color: transparent;
-  display: flex;
-  flex-direction: column;
-  width: 70%;
-
-  @include sm {
-    align-items: flex-start;
-    width: 100%;
-  }
-}
-
+// our story
 .our-story {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 8rem;
 
   p {
     margin-bottom: 2.4rem;
@@ -110,25 +133,25 @@ main {
     }
 
     @include sm {
-      font-size: 2rem;
+      font-size: 1.8rem;
       line-height: 3.2rem;
     }
   }
 
   @include sm {
-    padding: 8rem 3.2rem;
+    // padding: 8rem 3.2rem;
   }
 
   @include md {
-    padding: 8rem auto;
+    // padding: 8rem auto;
   }
 }
 
+//who
 .who-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 8rem;
   margin-bottom: 2.4rem;
 
   * {
@@ -136,9 +159,6 @@ main {
   }
 
   @include sm {
-    margin: 0 auto;
-    padding: 8rem 3.2rem;
-
     p {
       min-width: 80vw;
     }
@@ -200,6 +220,7 @@ main {
   }
 }
 
+//highlight
 .hightlight {
   position: relative;
 
@@ -299,18 +320,14 @@ main {
   }
 }
 
+//how
 .how-it-works {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 8rem;
-
-  @include sm {
-    padding: 8rem 3.2rem;
-  }
 
   &>.box--container>p {
-    width: 40vw;
+    width: 50vw;
     font-size: 1.8rem;
     line-height: 2.8rem;
 
@@ -326,55 +343,35 @@ main {
   }
 
   .img-container {
-    display: flex;
-    flex-direction: row;
     margin-top: 7rem;
-    overflow: hidden;
 
-    @include sm {
-      flex-direction: column;
-      align-self: center;
-    }
-
-    .arrow {
-      width: 3vw;
-      margin: 0 1rem;
-
-      @include md {
-        width: 3vw;
-        margin: 0 0.5rem;
-      }
+    .infographic-w {
+      display: block;
+      width: 100%;
 
       @include sm {
-        transform: rotate(90deg);
-        align-self: center;
-        width: 7vw;
-        margin: 2.5rem 0;
+        display: none;
       }
     }
 
-    .infographic {
-      width: 15.5vw;
-
-      @include md {
-        width: 15.5vw;
-        margin: 0;
-      }
+    .infographic-v {
+      display: none;
 
       @include sm {
-        align-self: center;
-        width: 50vw;
+        display: block;
+        width: 50%;
+        margin: 0 auto;
       }
     }
+
   }
 }
 
+//learn
 .learn {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 8rem;
-  margin-bottom: 2.4rem;
 
   &>.columns--container {
     display: flex;
@@ -421,31 +418,22 @@ main {
     justify-content: center;
     align-self: center;
   }
-
-  @include sm {
-    margin: 0 auto;
-    padding: 8rem 3.2rem;
-  }
 }
 
+//projects
 .projects {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 8rem;
 
   * {
     background-color: inherit;
   }
 
-  @include sm {
-    margin: 0 auto;
-    padding: 8rem 3.2rem 4rem 3.2rem;
-  }
-
   .project--container {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 
     @include sm {
       flex-direction: column;
@@ -455,12 +443,15 @@ main {
   .project--items {
     display: flex;
     flex-direction: column;
-    margin: 1.6rem 10rem 0 0;
-    width: 40rem;
+    margin: 1.6rem 0;
 
     @include sm {
       width: 100%;
       margin: 1.6rem 0 4rem 0;
+    }
+
+    &:first-of-type {
+      margin-right: 4rem;
     }
 
     h2 {
@@ -484,17 +475,17 @@ main {
   }
 }
 
+//Connect
 .connect-with-us {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 7rem;
 
   h2 {
     margin-top: 0;
   }
 
-  & > .rows--container {
+  &>.rows--container {
     display: flex;
     flex-direction: row;
     margin-bottom: 3rem;
@@ -512,18 +503,14 @@ main {
       box-shadow: $grey 0 4px 12px;
     }
   }
-
-  @include sm {
-    margin: 0 auto;
-    padding: 6rem 3.2rem;
-  }
 }
 
+//footer
 footer {
   background-color: $black;
   position: relative;
 
-  & > .left-blob {
+  &>.left-blob {
     position: absolute;
 
     @include lg {
@@ -541,7 +528,7 @@ footer {
     }
   }
 
-  & > .bottom-blob {
+  &>.bottom-blob {
     position: absolute;
     margin: 0 20rem;
     bottom: 0;
@@ -561,7 +548,7 @@ footer {
     }
   }
 
-  & > .right-blob {
+  &>.right-blob {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -588,7 +575,7 @@ footer {
   .copyright {
     padding: 4rem 8rem;
     color: $white;
-    
+
 
     p {
       text-align: center;
