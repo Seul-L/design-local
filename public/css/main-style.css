@@ -568,32 +568,32 @@ main {
   box-shadow: #75757A 0 4px 12px;
 }
 
-.connect {
+.connect-with-us {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 7rem;
 }
-.connect h2 {
+.connect-with-us h2 {
   margin-top: 0;
 }
-.connect .rows--container {
+.connect-with-us .rows--container {
   display: flex;
   flex-direction: row;
   margin-bottom: 3rem;
 }
-.connect .rows--container a {
+.connect-with-us .rows--container a {
   margin-right: 2rem;
 }
-.connect .rows--container img {
+.connect-with-us .rows--container img {
   width: 70%;
 }
-.connect .rows--container img:hover {
+.connect-with-us .rows--container img:hover {
   border-radius: 0.4rem;
   box-shadow: #75757A 0 4px 12px;
 }
 @media (min-width: 320px) and (max-width: 640px) {
-  .connect {
+  .connect-with-us {
     margin: 0 auto;
     padding: 6rem 3.2rem;
   }
