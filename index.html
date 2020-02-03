@@ -1,256 +1,366 @@
 <!DOCTYPE html>
 <html lang="en-CA">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"
+    />
+    <meta property="og:title" content="design.local" />
+    <meta
+      property="og:image"
+      content="https://designdotlocal.ca/public/assets/thumbnail.png"
+    />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="627" />
+    <meta property="og:image:alt" content="Design.local logo" />
+    <meta property="og:description" content="Design.local website" />
+    <meta property="og:url" content="https://designdotlocal.ca" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
-  <meta property='og:title' content="design.local" />
-  <meta property="og:image" content="https://designdotlocal.ca/public/assets/thumbnail.png" />
-  <meta property="og:image:type" content="image/png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="627" />
-  <meta property="og:image:alt" content="Design.local logo" />
-  <meta property="og:description" content="Design.local website" />
-  <meta property="og:url" content="https://designdotlocal.ca" />
+    <title>Design.local</title>
 
-  <title>Design.local</title>
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link href="public/css/main-style.css" rel="stylesheet" />
 
-  <!-- css -->
-  <link href="public/css/main-style.css" rel="stylesheet">
-</head>
+    <!-- Google analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157598427-1"></script>
+    <script>
+     window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-<body>
-  <main>
-    <section class="hero-container">
-      <img src="public/assets/yellow-blob.svg" alt="yellow-blob">
-      <img src="public/assets/teal-blob.svg" alt="teal-blob">
-      <div class="hero" id="hero-section">
-        <div class="hero-text">
-          <img src="public/assets/logo-w-tagline.svg" alt="logo">
-          <img src="public/assets/thumbnail.png" alt="thumbnail" style="display: none;">
+      gtag('config', 'UA-157598427-1');
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s) [0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl; f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-M82KCK6');</script>
+    <!-- End Google Tag Manager -->
+    </script>
+  </head>
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M82KCK6" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <section class="black-bg">
+      <section class="wrapper">
+        <div class="logo-container">
+          <img
+            class="logo"
+            src="public/assets/logo-w-transparent-bg.svg"
+            alt="logo"
+          />
+        </div>
+        <section class="container">
+          <div class="hero-txt">
+            <img
+              src="public/assets/thumbnail.png"
+              alt="thumbnail"
+              style="display: none;"
+            />
+            <h1>Everyone is a designer.</h1>
+            <p>
+              We are a multidisciplinary group of creators, designers,
+              strategists, and developers using our skills to solve design
+              challenges for not-for-profit organizations in the Waterloo
+              Region.
+            </p>
+            <p>
+              We want to give designers an environment to work with other
+              designers on solving real problems for organizations that work to
+              better our community.
+            </p>
+            <p>
+              If you are looking to give back to your local community, or you
+              want to explore design problems from different industries, then
+              this is for you.
+            </p>
+            <form action="http://bit.ly/designdotlocal-slack" target="_blank" >
+              <button class="join-us" type="submit">
+                <span class="circle" aria-hidden="true">
+                  <span class="icon arrow"></span>
+                </span>
+                <span class="button-text">Join our slack community</span>
+              </button>
+            </form>
+          </div>
+          <div class="image-container">
+            <img
+              class="hero-image"
+              src="public/assets/hero-image.svg"
+              alt="hero-image"
+            />
+          </div>
+        </section>
+      </section>
+    </section>
+    <!-- Hero section ends-->
+
+    <section class="wrapper">
+      <section class="container">
+        <div class="left image-container">
+          <img
+            class="photos"
+            src="public/assets/designer.png"
+            alt="photo of designer"
+          />
+        </div>
+        <div class="right">
+          <h2>Who is a <span class="teal">designer?</span></h2>
           <p>
-            We are a team of creators, designers, strategists, and developers connecting the dots – leveraging the
-            skills
-            and backgrounds of multidisciplinary individuals to solve design challenges with organizations in the
-            Waterloo
-            Region.
+            We believe that anyone who is a professional
+            <span class="bold">problem solver</span> is a designer. Engineers,
+            Graphic Designers, Visual Designers, Installation Artists,
+            Architects, Musicians, Painters, Writers - these people are all
+            designers because they output creative solutions to complex
+            problems.
           </p>
-        </div> <!-- hero text ends -->
-      </div> <!-- hero ends -->
-    </section> <!-- hero-container ends -->
-
-    <section class="container">
-      <div class="our-story">
-        <div class="box--container">
-          <h1><span class="coral">Connecting</span> our community <br>with design</h1>
           <p>
-            Many organizations <span class="bold white">lack the resources</span> to effectively utilize digital
-            systems, processes, and tools. This may simply be a result of <span class="bold white">insufficient
-              know-how</span>, tools, or access to people with design or research specific skills.
-          </p>
-          <p>
-            While competition can be a driving force of innovation and market growth, <span
-              class="bold white">collaboration is a core aspect of meaningful community impact</span>. Design.local
-            intends to be the catalyst to push the boundaries of economic growth and help our members develop critical
-            design skills.
+            We have created a platform that brings these great minds together.
           </p>
         </div>
-      </div>
-    </section><!-- our-story ends -->
-    <hr>
-
-    <section class="container">
-      <div class="who-container">
-        <div class="box--container">
-          <h1><span class="teal">Who' s</span> Involved</h1>
+      </section>
+      <!-- designer section ends -->
+      <section class="container">
+        <div class="left">
+          <h2>
+            We work <span class="yellow">with</span> businesses,<br />
+            <span class="yellow">not for</span> businesses.
+          </h2>
+          <p>
+            We are working in collaboration with businesses, but designers own
+            the work. Businesses are free to utilize the creative output from
+            each design challenge, or go so far as to hire a member from the
+            team if they want to explore the solution further.
+          </p>
         </div>
-        <div class="columns--container">
-          <div class="who-column">
-            <h2>Designers</h2>
-            <p>
-              There are skilled problem solvers across multiple disciplines in the Waterloo Region, each with their own
-              backgrounds and expertise.
-            </p>
-          </div>
-          <div class="who-column">
-            <h2>Graduates</h2>
-            <p>
-              The Waterloo Region has three world-class post-secondary schools that graduate new cohorts every year that
-              have the potential to contribute to the local economy.
-            </p>
-          </div>
-          <div class="who-column">
-            <h2>Government</h2>
-            <p>
-              Governments identify and enact actionable initiatives that assist in driving economic value for their
-              constituents.
-            </p>
-          </div>
-        </div> <!-- columns--container ends -->
-      </div>
-    </section> <!-- who section ends -->
+        <div class="right image-container">
+          <img
+            class="photos"
+            src="public/assets/work-with.png"
+            alt="photo of collaboration"
+          />
+        </div>
+      </section>
+      <!-- with business section ends -->
+    </section>
 
-    <section class="hightlight">
-      <img src="public/assets/left-blobs.svg" alt="left-blob">
-      <img src="public/assets/right-blobs.svg" alt="right-blob">
-      <div class="imagine">
-        <h1><span class="teal">Design.local</span> is connecting the dots</h1>
-        <p>
-          By bringing skilled people together, we provide the opportunity to collaborate with organizations, governments
-          and problem solvers in our community.
+    <section class="black-bg">
+      <section class="wrapper centred-txt">
+        <img
+          class="quote-icon"
+          src="public/assets/quotation-mark.svg"
+          alt="quotation mark"
+        />
+        <p class="quote-txt">
+          While competition can be a driving force of innovation and market
+          growth,
+          <span class="bold"
+            >collaboration is a core aspect of meaningful community
+            impact.</span
+          >
+          Design.local intends to be the catalyst that connects the right people
+          in our community to solve meaningful problems that benefit everyone.
         </p>
-      </div> <!-- imagine ends -->
-    </section> <!-- highlight ends -->
+      </section>
+    </section>
+    <!-- quote 1 section ends -->
 
-    <section class="container">
-      <div class="how-it-works">
-        <div class="box--container">
-          <h1><span class="blue">How</span> it works</h1>
+    <section class="wrapper how-it-works">
+      <h1>Our<span class="teal"> process</span> is simple.</h1>
+      <img
+        class="infographic-h"
+        src="public/assets/info-h.svg"
+        alt="infographic-image"
+      />
+      <img
+        class="infographic-v"
+        src="public/assets/info-v.svg"
+        alt="infographic-image"
+      />
+    </section>
+    <!-- process section ends -->
+
+    <section class="wrapper">
+      <section class="container">
+        <div class="left image-container">
+          <img
+            class="photos"
+            src="public/assets/value-for-business.png"
+            alt="photo of workshop"
+          />
+        </div>
+        <div class="right">
+          <h2>
+            What value does <span class="coral">design</span> deliver for
+            organizations?
+          </h2>
           <p>
-            Design.local creates new opportunities, develops new insights and plans for design strategy, and engages and
-            retains talent.
+            Design teams can help ideate on solutions to important problems.
+          </p>
+          <p>
+            Organizations can choose to be as involved in the design process as
+            they want. However, by participating in the process there are
+            opportunities to learn first-hand how effective design-thinking
+            techniques can be.
           </p>
         </div>
-        <div class="columns--container">
-          <div class="img-container">
-            <img class="infographic-w" src="public/assets/infographic-w.svg" alt="infographic-image">
-            <img class="infographic-v" src="public/assets/infographic-v.svg" alt="infographic-image">
+      </section>
+      <!-- value for business section ends -->
+
+      <section class="container">
+        <div class="left">
+          <h2>No, this is <span class="yellow">not</span> free work.</h2>
+          <p>
+            This is not about exploiting people and using them for free work.
+            Free work means working without any benefits returned to the
+            designer.
+          </p>
+          <p class="mt-xs">
+            We are providing a platform which delivers experience and
+            social-good as value to all parties involved. Local organizations,
+            designers of all experience levels, and ultimately our local
+            community are all able to learn from each other.
+          </p>
+          <p class="mt-xs">
+            Some examples of the values you can get are:
+          </p>
+          <div class="two-columns">
+            <ul>
+              <li>Real Life Experience</li>
+              <li>Fail Safe Environment</li>
+              <li>Positive Social Impact</li>
+            </ul>
+            <ul>
+              <li>Networking</li>
+              <li>Knowledge Exchange</li>
+              <li>Coaching (Short form of a mentorship)</li>
+            </ul>
           </div>
-        </div> <!-- columns--container ends -->
+        </div>
+        <div class="right image-container">
+          <img
+            class="photos"
+            src="public/assets/not-free-work.png"
+            alt="photo of collaboration"
+          />
+        </div>
+      </section>
+    </section>
+    <!-- not free work section ends -->
+
+    <section class="black-bg">
+      <section class="wrapper centred-txt">
+        <img
+          class="quote-icon"
+          src="public/assets/quotation-mark.svg"
+          alt="quotation mark"
+        />
+        <p class="quote-txt">
+          Design.local is <span class="bold">connecting the dots</span> by
+          creating opportunities for collaborate between organizations and
+          problem solvers in our community.
+        </p>
+      </section>
+    </section>
+    <!-- quote 2 section ends -->
+
+    <section class="wrapper design-challenge">
+      <h2>Design<span class="coral"> challenges</span></h2>
+      <p>
+        A design challenge is a response to a business problem. Design.local
+        takes on business problems, and reframes them into design challenges
+        where the parameters of success are defined by the designers that have
+        taken on the problem.
+      </p>
+      <br>
+      <p class="caption-txt">Medium article is currently working in process. Come back again :)</p>
+      <div class="btn-container">
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLSfE9D43_3sQw1oFFkp1ENMAoba_nHQfEn-0yGB3GDcytKzppA/viewform?usp=sf_link" target="_blank">
+          <button class="challenge-btn" type="submit">
+            <span>SUBMIT</span><br />
+            <span>Business Problems</span>
+          </button>
+        </form>
+        <form action="https://medium.com/designdotlocal" target="_blank">
+          <button class="challenge-btn-disabled" type="submit" disabled>
+            <span>VIEW</span><br />
+            <span>Previous Challenges</span>
+          </button>
+        </form>
       </div>
-    </section> <!-- how-it-works ends -->
-    <hr>
+    </section>
+    <!-- design challenge section ends -->
+    <hr />
 
-    <section class="container">
-      <div class="learn">
-        <div class="box--container">
-          <h1>What you might <span class="yellow">learn</span><br>
-            in the process</h1>
+    <section class="wrapper">
+      <section class="container involved-section">
+        <div class="left">
+          <h1>
+            Interested in<br />
+            getting<span class="blue"> Involved?</span>
+          </h1>
         </div>
-        <div class="columns--container">
-          <div class="rows--container">
-            <div class="columns--container">
-              <img class="icon-img" src="public/assets/impact.svg" alt="impact-image">
-              <p>Positive Social Impact</p>
-            </div>
-            <div class="columns--container">
-              <img class="icon-img" src="public/assets/knowledge.svg" alt="knowledge-image">
-              <p>Knowledge Exchange </p>
-            </div>
-            <div class="columns--container">
-              <img class="icon-img" src="public/assets/network.svg" alt="network-image">
-              <p>Networking</p>
-            </div>
-          </div> <!-- rows--container ends-->
+        <div class="right">
+          <a href="http://bit.ly/designdotlocal-slack" target="_blank"
+            ><h2>Join our slack community</h2></a>
+          <p>& Check out our other social media</p>
+          <div class="contact-logos">
+            <a href="https://www.instagram.com/designdotlocal" target="_blank"
+              ><img src="public/assets/instagram.svg" alt="instagram-logo"
+            /></a>
+            <a href="https://twitter.com/designdotlocal" target="_blank"
+              ><img src="public/assets/twitter.svg" alt="twitter-logo"
+            /></a>
+            <a href="https://www.linkedin.com/company/design-local" target="_blank"
+              ><img src="public/assets/linkedin.svg" alt="linkedin-logo"
+            /></a>
+        </div>
+      </section>
+    </section>
+    <!-- contact section ends -->
 
-          <div class="rows--container">
-            <div class="columns--container">
-              <img class="icon-img" src="public/assets/mentor.svg" alt="mentor-image">
-              <p>Mentorship</p>
-            </div>
-            <div class="columns--container">
-              <img class="icon-img" src="public/assets/gig.svg" alt="gig-image">
-              <p>New Opportunities</p>
-            </div>
-            <div class="columns--container">
-              <img class="icon-img" src="public/assets/experiment.svg" alt="experiment-image">
-              <p>Exploring Mindset</p>
-            </div>
-          </div> <!-- rows--container ends-->
-        </div> <!-- columns--container ends -->
+    <footer>
+      <img
+        class="left-blob"
+        src="public/assets/coral-left.svg"
+        alt="left-blob"
+      />
+      <img
+        class="bottom-blob"
+        src="public/assets/teal-bottom.svg"
+        alt="bottom-blob"
+      />
+      <img
+        class="right-blob"
+        src="public/assets/blue-right.svg"
+        alt="right-blob"
+      />
+      <div class="copyright">
+        <img
+          class="logo"
+          src="public/assets/logo-w-transparent-bg.svg"
+          alt="logo"
+        />
+        <p>Connecting the dots.</p>
+        <p>&copy; Copyright 2020 Design.local</p>
       </div>
-    </section> <!-- learn ends -->
-    <hr>
-
-    <section class="container">
-      <div class="who-container">
-        <!-- what you can do to help our cause-->
-        <div class="box--container">
-          <h1>What you can <span class="yellow">do</span><br>to help our cause</h1>
-        </div>
-        <div class="columns--container">
-          <div class="who-column">
-            <h2>Designers</h2>
-            <p>
-              <span class="bold white">Follow us</span> on our social media to keep up with our progress and get
-              notified
-              about new projects
-            </p>
-          </div>
-          <div class="who-column">
-            <h2>Organizations</h2>
-            <p>
-              <span class="bold white">Collaborate</span> with us and submit a proposal.
-            </p>
-          </div>
-          <div class="who-column">
-            <h2>Government</h2>
-            <p>
-              <span class="bold white">Work with us</span> to connect with people across the government and our community.
-            </p>
-          </div>
-        </div> <!-- columns--container ends -->
-      </div>
-    </section> <!-- who-container ends -->
-    <hr>
-
-    <section class="container">
-      <div class="projects">
-        <div class="box--container">
-          <h1>Active design <span class="coral">challenges</span></h1>
-        </div>
-        <div class="project--container">
-          <div class="project--items">
-            <h2>THEMUSEUM - Youth Council</h2>
-            <a href="https://themuseum.ca/"><img src="public/assets/themuseum-logo.png" alt="themuseum-logo"></a>
-            <p>
-              We’re currently designing a digital experience with THEMUSEUM’s Youth Council, a group of diverse teens
-              working to create projects for youth, by youth.
-            </p>
-          </div>
-          <div class="project--items">
-            <h2>Butterfly Learning Centre</h2>
-            <a href="http://www.butterflylearningcentre.com/"><img src="public/assets/butterfly-logo.png"
-                alt="butterfly-logo"></a>
-            <p>
-              We’re currently designing a strategy based solution with The Butterfly Learning Centre, a non-profit child
-              care centre that works to enrich learning experiences.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section> <!-- project section ends -->
-    <hr>
-
-    <section class="container">
-      <div class="connect-with-us">
-        <div class="box--container">
-          <h1><span class="teal">Connect</span> with us!</h1>
-        </div>
-        <div class="rows--container">
-          <a href="https://www.instagram.com/designdotlocal"><img src="public/assets/instagram.svg"
-              alt="instagram-logo"></a>
-          <a href="https://twitter.com/designdotlocal"><img src="public/assets/twitter.svg" alt="twitter-logo"></a>
-          <a href="https://www.linkedin.com/company/design-local"><img src="public/assets/linkedin.svg"
-              alt="linkedin-logo"></a>
-        </div>
-      </div>
-    </section> <!-- connect section ends -->
-  </main>
-
-  <footer>
-    <img class="left-blob" src="public/assets/coral-left.svg" alt="left-blob">
-    <img class="bottom-blob" src="public/assets/teal-bottom.svg" alt="bottom-blob">
-    <img class="right-blob" src="public/assets/blue-right.svg" alt="right-blob">
-    <div class="copyright">
-      <img class="logo" src="public/assets/logo-w-transparent-bg.svg" alt="logo">
-      <p>Connecting the dots.</p>
-      <p>&copy; Copyright 2019 Design.local</p>
-    </div>
-  </footer> <!-- footer ends-->
-</body>
-
+    </footer>
+    <!-- footer ends-->
+  </body>
 </html>
