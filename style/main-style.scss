@@ -308,11 +308,18 @@ button {
   @include sm {
     margin: 0 auto;
     h2,
-    p {
+    p,
+    .caption-txt {
       width: 80%;
       margin: 0 auto;
       margin-top: 2rem;
     }
+  }
+
+  .caption-txt {
+    font-style: italic;
+    font-size: 1.6rem;
+    color: $blue;
   }
 
   .btn-container {
@@ -333,7 +340,8 @@ button {
       }
     }
 
-    .challenge-btn {
+    .challenge-btn,
+    .challenge-btn-disabled {
       width: 30rem;
       height: 10rem;
       border-radius: 0.8rem;
@@ -347,29 +355,27 @@ button {
           font-weight: 400;
         }
       }
-      .medium {
-        background-color: $grey;
-      }
-
-      &:hover {
-        background-color: $dark-grey;
-        border: 0.2rem solid $coral;
-
-        span {
-          color: $white;
-        }
-      }
       @include sm {
         width: 25rem;
         height: 8rem;
+      }
+    }
+
+    .challenge-btn:hover {
+      background-color: $dark-grey;
+      border: 0.2rem solid $coral;
+
+      span {
+        color: $white;
+      }
+      @include sm {
         box-shadow: $coral 0 0.2rem 12px;
       }
     }
-  }
-  .caption-txt {
-    font-style: italic;
-    font-size: 1.6rem;
-    color: $blue;
+    .challenge-btn-disabled {
+      background-color: $grey;
+      cursor: default;
+    }
   }
 }
 
