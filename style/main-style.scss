@@ -347,6 +347,10 @@ button {
           font-weight: 400;
         }
       }
+      .medium {
+        background-color: $grey;
+      }
+
       &:hover {
         background-color: $dark-grey;
         border: 0.2rem solid $coral;
@@ -361,6 +365,11 @@ button {
         box-shadow: $coral 0 0.2rem 12px;
       }
     }
+  }
+  .caption-txt {
+    font-style: italic;
+    font-size: 1.6rem;
+    color: $blue;
   }
 }
 

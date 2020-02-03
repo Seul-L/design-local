@@ -33,16 +33,30 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157598427-1"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-     function gtag(){dataLayer.push(arguments);}
-     gtag('js', new Date());
+     window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-     gtag('config', 'UA-157598427-1');
+      gtag('config', 'UA-157598427-1');
     </script>
 
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s) [0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl; f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-M82KCK6');</script>
+    <!-- End Google Tag Manager -->
+    </script>
   </head>
 
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M82KCK6" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <section class="black-bg">
       <section class="wrapper">
         <div class="logo-container">
@@ -77,7 +91,7 @@
               this is for you.
             </p>
             <form action="http://bit.ly/designdotlocal-slack" target="_blank" >
-              <button class="join-us" onclick=”ga(‘send’, ‘event’, [button], [button-clicks], [join-slack]); type="submit">
+              <button class="join-us" type="submit">
                 <span class="circle" aria-hidden="true">
                   <span class="icon arrow"></span>
                 </span>
@@ -276,18 +290,19 @@
       </p>
       <div class="btn-container">
         <form action="https://docs.google.com/forms/d/e/1FAIpQLSfE9D43_3sQw1oFFkp1ENMAoba_nHQfEn-0yGB3GDcytKzppA/viewform?usp=sf_link" target="_blank">
-          <button class="challenge-btn" type="submit" onclick=”ga(‘send’, ‘event’, [form], [request], [problem-submit]);>
+          <button class="challenge-btn" type="submit">
             <span>SUBMIT</span><br />
             <span>Business Problems</span>
           </button>
         </form>
-        <form action="https://medium.com/designdotlocal" target="_blank" onclick=”ga(‘send’, ‘event’, [article], [read], [medium]);>
-          <button class="challenge-btn" type="submit">
+        <form action="https://medium.com/designdotlocal" target="_blank">
+          <button class="challenge-btn medium" type="submit" disabled>
             <span>VIEW</span><br />
             <span>Previous Challenges</span>
           </button>
         </form>
       </div>
+      <br><span class="caption-txt">Medium article is currently working in process. Come back again :)</span>
     </section>
     <!-- design challenge section ends -->
     <hr />
@@ -301,17 +316,17 @@
           </h1>
         </div>
         <div class="right">
-          <a href="http://bit.ly/designdotlocal-slack" onclick=”ga(‘send’, ‘event’, [button], [button-clicks], [join-slack2]); target="_blank"
+          <a href="http://bit.ly/designdotlocal-slack" target="_blank"
             ><h2>Join our slack community</h2></a>
           <p>& Check out our other social media</p>
           <div class="contact-logos">
-            <a href="https://www.instagram.com/designdotlocal" onclick=”ga(‘send’, ‘event’, [social], [connect], [instagram]); target="_blank"
+            <a href="https://www.instagram.com/designdotlocal" target="_blank"
               ><img src="public/assets/instagram.svg" alt="instagram-logo"
             /></a>
-            <a href="https://twitter.com/designdotlocal" onclick=”ga(‘send’, ‘event’, [social], [connect], [twitter]); target="_blank"
+            <a href="https://twitter.com/designdotlocal" target="_blank"
               ><img src="public/assets/twitter.svg" alt="twitter-logo"
             /></a>
-            <a href="https://www.linkedin.com/company/design-local" onclick=”ga(‘send’, ‘event’, [social], [connect], [linkedin]); target="_blank"
+            <a href="https://www.linkedin.com/company/design-local" target="_blank"
               ><img src="public/assets/linkedin.svg" alt="linkedin-logo"
             /></a>
         </div>

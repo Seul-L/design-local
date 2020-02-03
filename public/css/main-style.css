@@ -436,6 +436,9 @@ button:hover .button-text {
   font-size: 1.4rem;
   font-weight: 400;
 }
+.design-challenge .btn-container .challenge-btn .medium {
+  background-color: #75757a;
+}
 .design-challenge .btn-container .challenge-btn:hover {
   background-color: #25252b;
   border: 0.2rem solid #ff8368;
@@ -449,6 +452,11 @@ button:hover .button-text {
     height: 8rem;
     box-shadow: #ff8368 0 0.2rem 12px;
   }
+}
+.design-challenge .caption-txt {
+  font-style: italic;
+  font-size: 1.6rem;
+  color: #839cce;
 }
 
 .involved-section h1 {
