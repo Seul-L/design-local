@@ -28,6 +28,18 @@
 
     <!-- css -->
     <link href="public/css/main-style.css" rel="stylesheet" />
+
+    <!-- Google analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157598427-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+
+     gtag('config', 'UA-157598427-1');
+    </script>
+
   </head>
 
   <body>
@@ -64,8 +76,8 @@
               want to explore design problems from different industries, then
               this is for you.
             </p>
-            <form action="http://bit.ly/designdotlocal-slack" target="_blank">
-              <button class="join-us" type="submit">
+            <form action="http://bit.ly/designdotlocal-slack" target="_blank" >
+              <button class="join-us" onclick=”ga(‘send’, ‘event’, [button], [button-clicks], [join-slack]); type="submit">
                 <span class="circle" aria-hidden="true">
                   <span class="icon arrow"></span>
                 </span>
@@ -264,12 +276,12 @@
       </p>
       <div class="btn-container">
         <form action="https://docs.google.com/forms/d/e/1FAIpQLSfE9D43_3sQw1oFFkp1ENMAoba_nHQfEn-0yGB3GDcytKzppA/viewform?usp=sf_link" target="_blank">
-          <button class="challenge-btn" type="submit">
+          <button class="challenge-btn" type="submit" onclick=”ga(‘send’, ‘event’, [form], [request], [problem-submit]);>
             <span>SUBMIT</span><br />
             <span>Business Problems</span>
           </button>
         </form>
-        <form action="https://medium.com/designdotlocal" target="_blank">
+        <form action="https://medium.com/designdotlocal" target="_blank" onclick=”ga(‘send’, ‘event’, [article], [read], [medium]);>
           <button class="challenge-btn" type="submit">
             <span>VIEW</span><br />
             <span>Previous Challenges</span>
@@ -289,17 +301,17 @@
           </h1>
         </div>
         <div class="right">
-          <a href="http://bit.ly/designdotlocal-slack" target="_blank"
+          <a href="http://bit.ly/designdotlocal-slack" onclick=”ga(‘send’, ‘event’, [button], [button-clicks], [join-slack2]); target="_blank"
             ><h2>Join our slack community</h2></a>
           <p>& Check out our other social media</p>
           <div class="contact-logos">
-            <a href="https://www.instagram.com/designdotlocal" target="_blank"
+            <a href="https://www.instagram.com/designdotlocal" onclick=”ga(‘send’, ‘event’, [social], [connect], [instagram]); target="_blank"
               ><img src="public/assets/instagram.svg" alt="instagram-logo"
             /></a>
-            <a href="https://twitter.com/designdotlocal" target="_blank"
+            <a href="https://twitter.com/designdotlocal" onclick=”ga(‘send’, ‘event’, [social], [connect], [twitter]); target="_blank"
               ><img src="public/assets/twitter.svg" alt="twitter-logo"
             /></a>
-            <a href="https://www.linkedin.com/company/design-local" target="_blank"
+            <a href="https://www.linkedin.com/company/design-local" onclick=”ga(‘send’, ‘event’, [social], [connect], [linkedin]); target="_blank"
               ><img src="public/assets/linkedin.svg" alt="linkedin-logo"
             /></a>
         </div>
