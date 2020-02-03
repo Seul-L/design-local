@@ -1,516 +1,404 @@
-@import 'partials/colors';
-@import 'partials/resets';
-@import 'partials/breakpoints';
+@import "partials/colors";
+@import "partials/resets";
+@import "partials/breakpoints";
 
+@mixin transition(
+  $property: all,
+  $duration: 0.45s,
+  $ease: cubic-bezier(0.65, 0, 0.076, 1)
+) {
+  transition: $property $duration $ease;
+}
 // start styling in this scss file and do not touch css files (It's auto generated).
 
-// For all
-main {
+.wrapper {
+  max-width: 900px;
   margin: 0 auto;
+  padding: 2rem 0;
   overflow: hidden;
+
+  @include sm {
+    max-width: 100%;
+    & > .container:first-of-type {
+      flex-direction: column-reverse;
+    }
+    & > .container:last-of-type {
+      flex-direction: column;
+    }
+  }
 }
 
 .container {
-  max-width: 80%;
-  padding: 8rem;
-  margin: 0 auto;
-
-  @include md {
-    max-width: 100%;
-    padding: 8rem;
-  }
-
-  @include sm {
-    max-width: 100%;
-    padding: 4rem 3.2rem;
-  }
-}
-
-.box--container {
-  background-color: transparent;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  padding: 4rem 0;
+  margin-top: 4rem;
+  overflow: hidden;
 
   @include sm {
-    align-items: flex-start;
-    width: 100%;
+    margin-top: 1rem;
+    .photos {
+      margin-top: 2rem;
+    }
   }
 }
 
-// hero
-.hero-container {
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  margin-top: 0.5rem;
+  ul:first-of-type {
+    margin-left: 2rem;
+  }
+  @include sm {
+    flex-direction: column;
+    width: 100%;
+    margin: 1.5rem auto;
+    ul {
+      margin-left: 2rem;
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.mt-xs {
+  margin-top: 1.5rem;
+}
+
+.left,
+.right {
+  width: 50%;
+
+  @include sm {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.right {
+  margin-left: 4rem;
+  p:last-of-type {
+    margin-top: 1.5rem;
+  }
+
+  @include sm {
+    margin-left: auto;
+  }
+}
+
+button {
+  box-sizing: border-box;
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
   position: relative;
-
-  * {
-    background-color: $black;
-  }
-
-  &>img:first-of-type {
-    position: absolute;
-    width: 12%;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  &.join-us {
+    margin-top: 2rem;
+    width: 27rem;
     height: auto;
-
-    @include sm {
-      width: 0;
-      height: auto;
-    }
-  }
-
-  &>img:last-of-type {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 12%;
-    height: auto;
-
-    @include sm {
-      width: 0;
-      height: auto;
-    }
-  }
-
-  .hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    padding: 8rem;
-
-    .hero-text {
-      p {
-        max-width: 60vw;
-        font-size: 1.8rem;
-        line-height: 3.6rem;
-        color: $white;
-        margin-top: 5.6rem;
-        font-weight: 200;
-
-        @include sm {
-          font-size: 2.2rem;
-          line-height: 3.5rem;
+    .circle {
+      @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
+      position: relative;
+      display: block;
+      margin: 0;
+      width: 4rem;
+      height: 4rem;
+      background: $yellow;
+      border-radius: 4rem;
+      .icon {
+        @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background: $black;
+        &.arrow {
+          @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
+          left: 1.2rem;
+          width: 1.125rem;
+          height: 0.2rem;
+          background: none;
+          &::before {
+            position: absolute;
+            content: "";
+            top: -0.3rem;
+            right: 0.02rem;
+            width: 0.625rem;
+            height: 0.6rem;
+            border-top: 0.15rem solid #000;
+            border-right: 0.15rem solid #000;
+            transform: rotate(45deg);
+          }
         }
       }
     }
-
-    img {
-      max-width: 50%;
-
-      @include md {
-        max-width: 60%;
-      }
-
-      @include sm {
-        max-width: 100%;
-      }
+    .button-text {
+      @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
+      position: absolute;
+      font-size: 1.6rem;
+      top: 0;
+      left: 1.5rem;
+      right: 1.3rem;
+      bottom: 0;
+      padding: 0.9rem 0 0.5rem 0.5rem;
+      margin: 0 0 0 2.7rem;
+      color: $white;
+      font-weight: 600;
+      line-height: 2.4rem;
+      text-align: center;
     }
 
     @include sm {
-      margin: 0 auto;
-      padding: 8rem 3.2rem;
+      width: 27rem;
+      background-color: $yellow;
+      border-radius: 4rem;
+      margin-top: 4rem;
 
-      p {
-        min-width: 80vw;
+      .button-text {
+        color: $black;
+        font-weight: 600;
+        background-color: transparent;
       }
     }
-
-    @include md {
-      padding: 8rem 4.8rem;
+  }
+  &:hover {
+    .circle {
+      width: 100%;
+      .icon {
+        &.arrow {
+          background: $black;
+          transform: translate(1rem, 0);
+        }
+      }
+    }
+    .button-text {
+      color: $black;
+      font-weight: 600;
     }
   }
 }
 
-// our story
-.our-story {
+.image-container {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+
+  @include sm {
+    margin: 2rem auto;
+  }
+}
+
+.logo-container {
+  width: 20rem;
+  padding-top: 4rem;
+  & > .logo {
+    width: 100%;
+  }
+
+  @include sm {
+    padding-left: 3rem;
+  }
+}
+
+.hero-txt {
+  width: 60%;
+
+  h1 {
+    margin-top: 0;
+    padding-top: 0;
+  }
 
   p {
-    margin-bottom: 2.4rem;
+    margin-top: 1.3rem;
+  }
 
-    &:last-of-type {
-      margin-bottom: 0;
-    }
-
-    @include sm {
-      font-size: 1.8rem;
-      line-height: 3.2rem;
-    }
+  & > p:first-of-type {
+    margin-top: 0;
   }
 
   @include sm {
-    // padding: 8rem 3.2rem;
-  }
-
-  @include md {
-    // padding: 8rem auto;
+    width: 80%;
+    margin: 0 auto;
   }
 }
 
-//who
-.who-container {
+.hero-image {
+  max-width: 100%;
+  padding-left: 2rem;
+  @include sm {
+    display: none;
+  }
+}
+
+.photos {
+  max-width: 100%;
+  align-self: flex-start;
+}
+
+.centred-txt {
+  width: 70rem;
+  padding: 8rem 0 6rem 0;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-bottom: 2.4rem;
 
-  * {
-    background-color: inherit;
+  .quote-icon {
+    width: 3rem;
+    margin-right: 2rem;
+    align-self: flex-start;
+    @include sm {
+      margin-left: 2rem;
+    }
   }
 
   @include sm {
-    p {
-      min-width: 80vw;
-    }
-  }
-
-  &>.columns--container {
-    display: flex;
-    flex-direction: row;
-    padding: 0;
-
-    @include sm {
-      flex-direction: column;
-    }
-
-    @include md {
-      flex-direction: column;
-    }
-  }
-
-  .who-column {
-    width: 28rem;
-    margin: 0 2.4rem 0 0;
-
-    &:last-of-type {
-      margin: 0;
-    }
-
-    h2 {
-      margin-bottom: 1.6rem;
-    }
-
-    p {
-      color: $light-blue;
-      font-weight: 200;
-
-      @include sm {
-        font-size: 2rem;
-        line-height: 3.2rem;
-      }
-    }
-
-    @include sm {
-      width: 100%;
-      margin: 0 0 3.2rem 0;
-
-      &:last-of-type {
-        margin: inherit;
-      }
-    }
-
-    @include md {
-      width: 70%;
-      margin: 0 0 3.2rem 0;
-
-      &:last-of-type {
-        margin: inherit;
-      }
-    }
-  }
-}
-
-//highlight
-.hightlight {
-  position: relative;
-
-  * {
-    background-color: $black;
-  }
-
-  &>img:first-of-type {
-    position: absolute;
-
-    @include lg {
-      width: 10%;
-      height: auto;
-    }
-
-    @include md {
-      width: 15%;
-      height: auto;
-    }
-
-    @include sm {
-      display: none;
-    }
-  }
-
-  &>img:last-of-type {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-
-    @include lg {
-      width: 10%;
-      height: auto;
-    }
-
-    @include md {
-      width: 14%;
-      height: auto;
-    }
-
-    @include sm {
-      display: none;
-    }
-  }
-
-  .imagine {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    min-width: 32rem;
-    padding: 13rem 0;
-
-    h1 {
-      text-align: center;
-      margin: 0 auto 4.8rem auto;
-
-      @include md {
-        margin: 0 auto 4.8rem auto;
-        width: 70%;
-      }
-
-      @include sm {
-        text-align: left;
-        padding: 4rem 3.2rem;
-        font-size: 5rem;
-        line-height: 6.5rem;
-      }
-
-    }
-
-    p {
-      text-align: center;
-      color: $white;
-      margin: auto;
-      font-weight: 200;
-      font-size: 1.8rem;
+    .quote-txt {
+      width: 75%;
       line-height: 3.2rem;
-      width: 55vw;
-
-      @include md {
-        margin: 0 auto 4.8rem auto;
-        width: 70%;
-      }
-
-      @include sm {
-        width: 80%;
-        padding: 0;
-        text-align: left;
-        font-size: 2.4rem;
-        line-height: 4rem;
-      }
-    }
-
-    @include sm {
-      padding: 8rem 0;
+      margin: 0 auto;
+      padding-left: 1rem;
     }
   }
 }
 
-//how
 .how-it-works {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 2rem;
 
-  &>.box--container>p {
-    width: 50vw;
-    font-size: 1.8rem;
-    line-height: 2.8rem;
+  @include sm {
+    margin: 0 auto;
+    margin-top: 2rem;
 
-    @include md {
-      width: 60vw;
-    }
-
-    @include sm {
-      width: 90vw;
-      font-size: 2rem;
-      line-height: 3.2rem;
+    h1 {
+      margin: 2rem auto;
     }
   }
 
-  .img-container {
-    margin-top: 7rem;
+  .infographic-h {
+    width: 100%;
 
-    .infographic-w {
-      display: block;
-      width: 100%;
-
-      @include sm {
-        display: none;
-      }
-    }
-
-    .infographic-v {
+    @include sm {
       display: none;
-
-      @include sm {
-        display: block;
-        width: 50%;
-        margin: 0 auto;
-      }
     }
+  }
+  .infographic-v {
+    display: none;
 
+    @include sm {
+      display: block;
+      width: 30rem;
+      margin: 2rem auto;
+    }
   }
 }
 
-//learn
-.learn {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.design-challenge {
+  margin-top: 4rem;
 
-  &>.columns--container {
+  @include sm {
+    margin: 0 auto;
+    h2,
+    p {
+      width: 80%;
+      margin: 0 auto;
+      margin-top: 2rem;
+    }
+  }
+
+  .btn-container {
     display: flex;
-    flex-direction: row;
-
-    @include sm {
-      flex-direction: column;
-    }
-  }
-
-  .rows--container {
-    display: flex;
-    flex-direction: column;
-
-    &>.columns--container {
-      display: flex;
-      flex-direction: row;
-    }
-  }
-
-  .columns--container>.rows--container:first-of-type {
-    margin-right: 20vw;
-
-    @include sm {
-      margin-right: 0;
-    }
-  }
-
-  .rows--container>.columns--container {
     margin-top: 4rem;
 
-    &>p {
-      font-size: 1.8rem;
-
+    & > form:last-of-type {
+      margin-left: 2rem;
       @include sm {
-        font-size: 2rem;
-        line-height: 3.2rem;
+        margin-left: auto;
       }
     }
-  }
-
-  .icon-img {
-    margin-right: 3rem;
-    justify-content: center;
-    align-self: center;
-  }
-}
-
-//projects
-.projects {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  * {
-    background-color: inherit;
-  }
-
-  .project--container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 
     @include sm {
       flex-direction: column;
-    }
-  }
-
-  .project--items {
-    display: flex;
-    flex-direction: column;
-    margin: 1.6rem 0;
-
-    @include sm {
-      width: 100%;
-      margin: 1.6rem 0 4rem 0;
+      form {
+        margin: 2rem auto;
+      }
     }
 
-    &:first-of-type {
-      margin-right: 4rem;
-    }
-
-    h2 {
-      text-align: left;
-      margin-bottom: 3.2rem;
-    }
-
-    p {
-      color: $light-blue;
-      margin-top: 1.8rem;
-    }
-
-    img {
-      width: 100%;
-    }
-
-    img:hover {
+    .challenge-btn {
+      width: 30rem;
+      height: 10rem;
       border-radius: 0.8rem;
-      box-shadow: $grey 0 4px 12px;
+      background-color: $white;
+      & > span {
+        color: $black;
+        font-size: 2.4rem;
+        font-weight: 600;
+        &:last-of-type {
+          font-size: 1.4rem;
+          font-weight: 400;
+        }
+      }
+      &:hover {
+        background-color: $dark-grey;
+        border: 0.2rem solid $coral;
+
+        span {
+          color: $white;
+        }
+      }
+      @include sm {
+        width: 25rem;
+        height: 8rem;
+        box-shadow: $coral 0 0.2rem 12px;
+      }
     }
   }
 }
 
-//Connect
-.connect-with-us {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  h2 {
+.involved-section {
+  h1 {
     margin-top: 0;
   }
-
-  &>.rows--container {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 3rem;
-
-    a {
-      margin-right: 2rem;
-    }
-
-    img {
-      width: 70%;
-    }
-
-    img:hover {
-      border-radius: 0.4rem;
-      box-shadow: $grey 0 4px 12px;
+  h2 {
+    margin-bottom: 0.2rem;
+    &:hover {
+      color: teal;
     }
   }
 }
 
-//footer
+.contact-logos {
+  display: flex;
+  margin-top: 2rem;
+  a {
+    margin-right: 2rem;
+    &:hover {
+      border-radius: 1rem;
+      box-shadow: $white 0 0 12px;
+      background-color: transparent;
+    }
+
+    @include sm {
+      margin-right: 4rem;
+    }
+  }
+}
+
+// footer
 footer {
   background-color: $black;
   position: relative;
 
-  &>.left-blob {
+  & > .left-blob {
     position: absolute;
 
     @include lg {
@@ -518,17 +406,12 @@ footer {
       height: auto;
     }
 
-    @include md {
-      width: 15%;
-      height: auto;
-    }
-
     @include sm {
       display: none;
     }
   }
 
-  &>.bottom-blob {
+  & > .bottom-blob {
     position: absolute;
     margin: 0 20rem;
     bottom: 0;
@@ -538,28 +421,18 @@ footer {
       height: auto;
     }
 
-    @include md {
-      width: 10%;
-      height: auto;
-    }
-
     @include sm {
       display: none;
     }
   }
 
-  &>.right-blob {
+  & > .right-blob {
     position: absolute;
     right: 0;
     bottom: 0;
 
     @include lg {
       width: 10%;
-      height: auto;
-    }
-
-    @include md {
-      width: 14%;
       height: auto;
     }
 
@@ -576,7 +449,6 @@ footer {
     padding: 4rem 8rem;
     color: $white;
 
-
     p {
       text-align: center;
     }
@@ -590,7 +462,6 @@ footer {
       font-size: 1.6rem;
       font-weight: 300;
       margin-top: 2.4rem;
-      color: $light-grey;
     }
 
     .logo {
@@ -599,23 +470,21 @@ footer {
     }
 
     @include sm {
-      // padding: 3.2rem 2.4rem;
+      padding: 3.2rem 2.4rem;
 
-      // p:first-of-type {
-      //   color: $light-yellow;
-      //   font-size: 1.2rem;
-      // }
+      p:first-of-type {
+        font-size: 1.2rem;
+      }
 
-      // p:last-of-type {
-      //   font-size: 1.4rem;
-      //   font-weight: 200;
-      //   margin-top: 2.4rem;
-      //   color: $light-grey;
-      // }
+      p:last-of-type {
+        font-size: 1.4rem;
+        font-weight: 200;
+        margin-top: 2.4rem;
+      }
 
-      // img {
-      //   width: 16rem;
-      // }
+      img {
+        width: 16rem;
+      }
     }
   }
 }
