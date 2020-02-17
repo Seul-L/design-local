@@ -443,7 +443,7 @@ button:hover .button-text {
 .design-challenge .btn-container .challenge-btn > span:last-of-type,
 .design-challenge .btn-container .challenge-btn-disabled > span:last-of-type {
   font-size: 1.4rem;
-  font-weight: 400;
+  font-weight: 300;
 }
 @media (min-width: 320px) and (max-width: 900px) {
   .design-challenge .btn-container .challenge-btn,
@@ -579,7 +579,7 @@ footer .copyright .logo {
   }
   footer .copyright p:last-of-type {
     font-size: 1.4rem;
-    font-weight: 200;
+    font-weight: 300;
     margin-top: 2.4rem;
   }
   footer .copyright img {
