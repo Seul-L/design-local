@@ -411,11 +411,11 @@ button:hover .button-text {
   display: flex;
   margin-top: 4rem;
 }
-.design-challenge .btn-container > form:last-of-type {
-  margin-left: 2rem;
+.design-challenge .btn-container > form {
+  margin-right: 2rem;
 }
 @media (min-width: 320px) and (max-width: 900px) {
-  .design-challenge .btn-container > form:last-of-type {
+  .design-challenge .btn-container > form {
     margin-left: auto;
   }
 }
@@ -429,7 +429,7 @@ button:hover .button-text {
 }
 .design-challenge .btn-container .challenge-btn,
 .design-challenge .btn-container .challenge-btn-disabled {
-  width: 30rem;
+  width: 24rem;
   height: 10rem;
   border-radius: 0.8rem;
   background-color: #fefefe;
