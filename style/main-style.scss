@@ -327,9 +327,9 @@ button {
     margin-top: 4rem;
 
     & > form {
-      margin-right: 2rem;
+      margin-right: 1.6rem;
       @include sm {
-        margin-left: auto;
+        margin-right: auto;
       }
     }
 
@@ -342,7 +342,7 @@ button {
 
     .challenge-btn,
     .challenge-btn-disabled {
-      width: 24rem;
+      width: 22rem;
       height: 10rem;
       border-radius: 0.8rem;
       background-color: $white;
