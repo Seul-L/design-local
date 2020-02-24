@@ -411,9 +411,6 @@ button:hover .button-text {
   display: flex;
   margin-top: 4rem;
 }
-.design-challenge .btn-container > form {
-  margin-right: 1.6rem;
-}
 @media (min-width: 320px) and (max-width: 900px) {
   .design-challenge .btn-container > form {
     margin-right: auto;
@@ -433,6 +430,7 @@ button:hover .button-text {
   height: 10rem;
   border-radius: 0.8rem;
   background-color: #fefefe;
+  margin-right: 1.6rem;
 }
 .design-challenge .btn-container .challenge-btn > span,
 .design-challenge .btn-container .challenge-btn-disabled > span {
