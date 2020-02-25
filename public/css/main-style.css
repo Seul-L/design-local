@@ -129,8 +129,13 @@ img {
   font-size: 1.4rem;
   margin-top: 0.5rem;
 }
-.two-columns ul:first-of-type {
+.two-columns ul {
   margin-left: 2rem;
+  width: 55%;
+}
+.two-columns ul:last-of-type {
+  width: 45%;
+  margin-left: 3rem;
 }
 @media (min-width: 320px) and (max-width: 900px) {
   .two-columns {

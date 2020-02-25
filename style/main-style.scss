@@ -48,8 +48,13 @@
   justify-content: space-between;
   font-size: 1.4rem;
   margin-top: 0.5rem;
-  ul:first-of-type {
+  ul {
     margin-left: 2rem;
+    width: 55%;
+    &:last-of-type {
+      width: 45%;
+      margin-left: 3rem;
+    }
   }
   @include sm {
     flex-direction: column;
