@@ -155,6 +155,40 @@
     <h1>Our<span class="teal"> process</span> is simple.</h1>
     <img class="infographic-h" src="public/assets/info-h.svg" alt="infographic-image" />
     <img class="infographic-v" src="public/assets/info-v.svg" alt="infographic-image" />
+    <button type="button" class="collapsible">
+      <p>Details for organizations</p>
+      <span class="chevron bottom"></span>
+    </button>
+    <div class="content">
+      <ol>
+        <li>Fill out the business challenge form</li>
+        <li>Have an initial meeting with Designdotlocal admin team</li>
+        <li>The project goes live on the list for recruiting team members</li>
+        <li>After 2 weeks, project team members are introduced</li>
+        <li>Complete pre-project survey</li>
+        <li>Reconfirm timeframe and contribution hours and collaborate with project team members</li>
+        <li>Receives solution or recommendation presentation</li>
+        <li>Decide whether to implement or not</li>
+        <li>Complete post-project follow up survey</li>
+      </ol>
+    </div>
+
+    <button type="button" class="collapsible">
+      <p>Details for problem solvers</p>
+      <span class="chevron bottom"></span>
+    </button>
+    <div class="content">
+      <ol>
+        <li>Checkout projects on the project list and vote on the project to participate</li>
+        <li>Get notified team has been made</li>
+        <li>Have an initial meeting with the team and fill out the team contract</li>
+        <li>Have an initial meeting with the organization of the project</li>
+        <li>Collaborate with project team members and the organization</li>
+        <li>Finish off the project by providing a solution or recommendation presentation</li>
+        <li>Write up a case study for the Medium exposure</li>
+        <li>Complete post-project survey</li>
+      </ol>
+    </div>
   </section>
   <!-- process section ends -->
 
@@ -300,6 +334,23 @@
     </div>
   </footer>
   <!-- footer ends-->
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+  </script>
 </body>
 
 </html>
