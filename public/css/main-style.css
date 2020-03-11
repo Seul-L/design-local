@@ -350,6 +350,12 @@ button:hover .button-text {
   line-height: 4rem;
   font-weight: 400;
 }
+.content .link-on-card {
+  color: #334c80;
+}
+.content .link-on-card:hover {
+  color: #19191e;
+}
 @media (min-width: 320px) and (max-width: 900px) {
   .content {
     width: 80%;

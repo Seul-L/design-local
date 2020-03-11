@@ -264,6 +264,14 @@ button {
   line-height: 4rem;
   font-weight: 400;
 
+  .link-on-card {
+    color: $dark-blue;
+
+    &:hover {
+      color: $black;
+    }
+  }
+
   @include sm {
     width: 80%;
   }
