@@ -10,21 +10,12 @@ html {
   font-size: 62.5%;
 }
 
-.bk {
-  background-color: #25252b;
-}
-
 body {
-  color: #fefefe;
-  font-size: 1.8rem;
-  font-weight: 300;
   height: 100vh;
-  line-height: 3rem;
 }
 
 h1 {
   font-size: 4rem;
-  color: #fefefe;
   font-weight: 600;
   line-height: 5.6rem;
   margin-top: 2rem;
@@ -32,7 +23,6 @@ h1 {
 }
 
 h2 {
-  color: #fefefe;
   font-size: 3.2rem;
   font-weight: 500;
   line-height: 4.8rem;
@@ -40,15 +30,13 @@ h2 {
 }
 
 h3 {
-  color: #fefefe;
   font-size: 2.4rem;
   font-weight: 500;
   line-height: 4rem;
 }
 
 a {
-  color: #fefefe;
-  font-weight: 600;
+  font-weight: 500;
   text-decoration: none;
 }
 
@@ -75,8 +63,42 @@ img {
   display: block;
 }
 
+.black-bg, .dark-bg {
+  color: #fefefe;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 3rem;
+}
+.black-bg h1, .black-bg h2, .black-bg h3, .black-bg a, .black-bg i, .dark-bg h1, .dark-bg h2, .dark-bg h3, .dark-bg a, .dark-bg i {
+  color: #fefefe;
+}
+
 .black-bg {
   background-color: #19191e;
+}
+
+.dark-bg {
+  background-color: #25252b;
+}
+
+.white-bg {
+  background-color: #fefefe;
+  color: #19191e;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 3rem;
+}
+.white-bg h1, .white-bg h2, .white-bg h3, .white-bg a, .white-bg i {
+  color: #19191e;
+}
+
+.primary-button {
+  background-color: #00cab2;
+  color: #19191e;
+  font-weight: 500;
+  font-size: 1.6rem;
+  padding: 1rem 2.4rem;
+  border-radius: 0.4rem;
 }
 
 .coral {

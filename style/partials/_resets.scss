@@ -12,21 +12,12 @@ html {
   font-size: 62.5%; // 10px (browser default is 16px)
 }
 
-.bk {
-  background-color: $dark-grey;
-}
-
 body {
-  color: $white;
-  font-size: 1.8rem;
-  font-weight: 300;
   height: 100vh;
-  line-height: 3rem;
 }
 
 h1 {
   font-size: 4rem;
-  color: $white;
   font-weight: 600;
   line-height: 5.6rem;
   margin-top: 2rem;
@@ -34,7 +25,6 @@ h1 {
 }
 
 h2 {
-  color: $white;
   font-size: 3.2rem;
   font-weight: 500;
   line-height: 4.8rem;
@@ -42,15 +32,13 @@ h2 {
 }
 
 h3 {
-  color: $white;
   font-size: 2.4rem;
   font-weight: 500;
   line-height: 4rem;
 }
 
 a {
-  color: $white;
-  font-weight: 600;
+  font-weight: 500;
   text-decoration: none;
 }
 
@@ -77,10 +65,45 @@ img {
   display: block;
 }
 
+.black-bg, .dark-bg {
+  color: $white;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 3rem;
+
+  h1, h2, h3, a, i {
+    color: $white;
+  }
+}
+
 .black-bg {
   background-color: $black;
 }
 
+.dark-bg {
+  background-color: $dark-grey;
+}
+
+.white-bg {
+  background-color: $white;
+  color: $black;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 3rem;
+
+  h1, h2, h3, a, i {
+    color: $black;
+  }
+}
+
+.primary-button {
+  background-color: $teal;
+  color: $black;
+  font-weight: 500;
+  font-size: 1.6rem;
+  padding: 1rem 2.4rem;
+  border-radius: 0.4rem;
+}
 // colours for text
 
 .coral {

@@ -499,6 +499,69 @@ button {
   }
 }
 
+// design challenge page
+// .mt-8 {
+//   margin-top: 8rem;
+// }
+
+// .past-challenges {
+//   h2 {
+//     padding-top: 4rem;
+//     color: $blue;
+//   }
+// }
+
+// .gallery {
+//   display: grid;
+//   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+//   grid-auto-rows: auto;
+//   grid-gap: 3.2rem;
+  
+//   @include sm {
+//     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+//   }
+// }
+
+// .card {
+//   border-radius: 0.8rem;
+//   background-color: $white;
+//   padding: 1.6rem;
+//   margin-bottom: 1.6rem;
+  
+//   h3 {
+//     font-size: 2.4rem;
+//     font-weight: 500;
+//     line-height: 4.8rem;
+//     color: $black;
+//   }
+
+//   .subtitle {
+//     color: $dark-teal;
+//     font-size: 1.6rem;
+//     font-weight: 500;
+//     line-height: 2.4rem;
+//   }
+
+//   .card-body {
+//     color: $dark-grey;
+//     font-size: 1.6rem;
+//     margin: 2.4rem auto;
+//     line-height: 2.4rem;
+//     font-weight: 400;
+
+//     p:first-of-type {
+//       margin-bottom: 1.2rem;
+//       color: $grey;
+//     }
+//   }
+
+//   .card-footer {
+//     padding-top: 0.8rem;
+
+//   }
+// }
+
+
 // footer
 footer {
   background-color: $black;
