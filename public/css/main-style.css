@@ -8,6 +8,9 @@
 
 html {
   font-size: 62.5%;
+}
+
+.bk {
   background-color: #25252b;
 }
 
@@ -451,12 +454,12 @@ button:hover .button-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 2rem;
+  padding-top: 2rem;
 }
 @media (min-width: 320px) and (max-width: 900px) {
   .how-it-works {
-    margin: 0 auto;
-    margin-top: 2rem;
+    padding: 0 auto;
+    padding-top: 2rem;
   }
   .how-it-works h1 {
     margin: 2rem auto;
@@ -483,11 +486,11 @@ button:hover .button-text {
 }
 
 .design-challenge {
-  margin-top: 4rem;
+  padding-top: 4rem;
 }
 @media (min-width: 320px) and (max-width: 900px) {
   .design-challenge {
-    margin: 0 auto;
+    padding: 0 auto;
   }
   .design-challenge h2,
 .design-challenge p,
