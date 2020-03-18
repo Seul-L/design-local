@@ -505,6 +505,7 @@ button:hover .button-text {
 .design-challenge .btn-container {
   display: flex;
   margin-top: 4rem;
+  margin-left: 1rem;
 }
 @media (min-width: 320px) and (max-width: 900px) {
   .design-challenge .btn-container > form {
@@ -541,13 +542,17 @@ button:hover .button-text {
 @media (min-width: 320px) and (max-width: 900px) {
   .design-challenge .btn-container .challenge-btn,
 .design-challenge .btn-container .challenge-btn-disabled {
-    width: 25rem;
-    height: 8rem;
+    width: 28rem;
+    height: 12rem;
   }
 }
 .design-challenge .btn-container .challenge-btn:hover {
   background-color: #25252b;
   border: 0.2rem solid #ff8368;
+  transform: translateY(-0.4rem);
+  transition: all 0.1s ease-in-out 0s;
+  box-shadow: 0 0 1.2rem rgba(241, 148, 179, 0.64);
+  cursor: pointer;
 }
 .design-challenge .btn-container .challenge-btn:hover span {
   color: #fefefe;
@@ -564,32 +569,61 @@ button:hover .button-text {
 
 .involved-section h1 {
   margin-top: 0;
+  margin-bottom: 3.2rem;
 }
-.involved-section h2 {
-  margin-bottom: 0.2rem;
-}
-.involved-section h2:hover {
-  color: teal;
+.involved-section h3 {
+  margin-bottom: 0.8rem;
+  color: #d9e1f0;
 }
 .involved-section .involve-container {
   display: flex;
   flex-direction: column;
 }
+.involved-section .involve-container h3 {
+  margin-bottom: 0.8rem;
+  color: #d9e1f0;
+}
 .involved-section .involve-container .involve-btn {
-  padding: 1.6rem 2.4rem;
+  display: flex;
+  justify-content: center;
+  padding: 1.2rem 3.2rem;
+  border-radius: 4rem;
+  background-color: #fefefe;
+  margin-bottom: 3.2rem;
+}
+.involved-section .involve-container .involve-btn span {
+  font-size: 1.6rem;
+  align-self: center;
+  font-weight: 500;
+  margin-right: 0.8rem;
+}
+.involved-section .involve-container .involve-btn img {
+  width: 2.4rem;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  align-self: center;
+}
+.involved-section .involve-container .involve-btn:hover {
+  transform: translateY(-0.4rem);
+  transition: all 0.2s ease-in-out 0s;
+  cursor: pointer;
+  box-shadow: 0 0 1.2rem rgba(148, 169, 241, 0.64);
 }
 
 .contact-logos {
   display: flex;
-  margin-top: 2rem;
 }
 .contact-logos a {
-  margin-right: 2rem;
+  margin-right: 3rem;
 }
 .contact-logos a:hover {
   border-radius: 1rem;
-  box-shadow: #fefefe 0 0 12px;
+  box-shadow: 0 0 12px rgba(148, 169, 241, 0.64);
   background-color: transparent;
+  transform: translateY(-0.4rem);
+  transition: all 0.1s ease-in-out 0s;
+  cursor: pointer;
 }
 @media (min-width: 320px) and (max-width: 900px) {
   .contact-logos a {
@@ -617,7 +651,7 @@ footer > .left-blob {
 }
 footer > .bottom-blob {
   position: absolute;
-  margin: 0 20rem;
+  margin: 0 22rem;
   bottom: 0;
 }
 @media (min-width: 900px) {
@@ -638,7 +672,7 @@ footer > .right-blob {
 }
 @media (min-width: 900px) {
   footer > .right-blob {
-    width: 10%;
+    width: 8.5%;
     height: auto;
   }
 }
