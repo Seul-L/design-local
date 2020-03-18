@@ -362,14 +362,14 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 2rem;
 
   @include sm {
-    padding: 0 auto;
+    margin: 0 auto;
     padding-top: 2rem;
 
     h1 {
-      margin: 2rem auto;
+      padding: 2rem auto;
+      padding-left: 1.8rem;
     }
   }
 
@@ -396,7 +396,7 @@ button {
   padding-top: 4rem;
 
   @include sm {
-    padding: 0 auto;
+    margin: 0 auto;
     h2,
     p,
     .caption-txt {
@@ -560,7 +560,7 @@ footer {
     position: absolute;
 
     @include lg {
-      width: 10%;
+      width: 8%;
       height: auto;
     }
 
@@ -590,8 +590,9 @@ footer {
     bottom: 0;
 
     @include lg {
-      width: 8.5%;
+      width: 8%;
       height: auto;
+      bottom: 0;
     }
 
     @include sm {

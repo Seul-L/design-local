@@ -476,15 +476,15 @@ button:hover .button-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 2rem;
 }
 @media (min-width: 320px) and (max-width: 900px) {
   .how-it-works {
-    padding: 0 auto;
+    margin: 0 auto;
     padding-top: 2rem;
   }
   .how-it-works h1 {
-    margin: 2rem auto;
+    padding: 2rem auto;
+    padding-left: 1.8rem;
   }
 }
 .how-it-works .infographic-h {
@@ -512,7 +512,7 @@ button:hover .button-text {
 }
 @media (min-width: 320px) and (max-width: 900px) {
   .design-challenge {
-    padding: 0 auto;
+    margin: 0 auto;
   }
   .design-challenge h2,
 .design-challenge p,
@@ -665,7 +665,7 @@ footer > .left-blob {
 }
 @media (min-width: 900px) {
   footer > .left-blob {
-    width: 10%;
+    width: 8%;
     height: auto;
   }
 }
@@ -697,8 +697,9 @@ footer > .right-blob {
 }
 @media (min-width: 900px) {
   footer > .right-blob {
-    width: 8.5%;
+    width: 8%;
     height: auto;
+    bottom: 0;
   }
 }
 @media (min-width: 320px) and (max-width: 900px) {
