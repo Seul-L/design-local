@@ -54,11 +54,6 @@ hr {
   padding: 0;
 }
 
-i {
-  color: #fefefe;
-  margin-right: 0.8rem;
-}
-
 img {
   display: block;
 }
@@ -90,20 +85,6 @@ img {
 }
 .white-bg h1, .white-bg h2, .white-bg h3, .white-bg a, .white-bg i {
   color: #19191e;
-}
-
-.primary-button {
-  background-color: #00cab2;
-  color: #19191e;
-  font-weight: 500;
-  font-size: 1.6rem;
-  padding: 1rem 2.4rem;
-  border-radius: 0.4rem;
-}
-.primary-button:hover {
-  transform: translateY(-0.4rem);
-  transition: all 0.1s ease-in-out 0s;
-  box-shadow: 0 0 1.2rem rgba(241, 148, 179, 0.64);
 }
 
 .coral {

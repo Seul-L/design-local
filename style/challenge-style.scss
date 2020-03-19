@@ -11,7 +11,7 @@
   overflow: hidden;
 
   @include sm {
-    max-width: 100%;
+    max-width: 90%;
     & > .container:first-of-type {
       flex-direction: column-reverse;
     }
@@ -103,26 +103,46 @@
 .current-challenges {
   h3 {
     padding-top: 1.8rem;
+    color: $white;
   }
 
   .countdown {
-    margin-bottom: 2.4rem;
+    margin-top: 2.4rem;
+    margin-bottom: 3.2rem;
+    background-color: $dark-blue;
+    padding: 1.6rem;
+    border-radius: 1.8rem;
+
+    @include sm {
+      
+    }
 
     li {
       display: inline-block;
+      color: $white;
       text-align: center;
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       list-style-type: none;
       padding: 2rem;
       text-transform: uppercase;
+
+      @include sm {
+        padding: 1rem 0.3rem;
+        font-size: 1.5rem;
+      }
     }
   
     li span {
       text-align: center;
+      color: $white;
       font-weight: 500;
       display: block;
-      font-size: 4.5rem;
+      font-size: 4rem;
       padding-bottom: 0.8rem;
+
+      @include sm {
+        font-size: 3.2rem;
+      }
     }
 
     #msg {
@@ -153,7 +173,7 @@
   border-radius: 0.8rem;
   background-color: $white;
   padding: 1.6rem;
-  margin-bottom: 1.6rem;
+  margin-bottom: 1.8rem;
   display: grid;
   grid-template-rows: repeat (3);
   

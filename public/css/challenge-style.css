@@ -115,7 +115,7 @@ img {
 }
 @media (min-width: 320px) and (max-width: 900px) {
   .wrapper {
-    max-width: 100%;
+    max-width: 90%;
   }
   .wrapper > .container:first-of-type {
     flex-direction: column-reverse;
@@ -209,24 +209,42 @@ img {
 
 .current-challenges h3 {
   padding-top: 1.8rem;
+  color: #fefefe;
 }
 .current-challenges .countdown {
-  margin-bottom: 2.4rem;
+  margin-top: 2.4rem;
+  margin-bottom: 3.2rem;
+  background-color: #334c80;
+  padding: 1.6rem;
+  border-radius: 1.8rem;
 }
 .current-challenges .countdown li {
   display: inline-block;
+  color: #fefefe;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   list-style-type: none;
   padding: 2rem;
   text-transform: uppercase;
 }
+@media (min-width: 320px) and (max-width: 900px) {
+  .current-challenges .countdown li {
+    padding: 1rem 0.3rem;
+    font-size: 1.5rem;
+  }
+}
 .current-challenges .countdown li span {
   text-align: center;
+  color: #fefefe;
   font-weight: 500;
   display: block;
-  font-size: 4.5rem;
+  font-size: 4rem;
   padding-bottom: 0.8rem;
+}
+@media (min-width: 320px) and (max-width: 900px) {
+  .current-challenges .countdown li span {
+    font-size: 3.2rem;
+  }
 }
 .current-challenges .countdown #msg {
   font-size: 4.2rem;
@@ -253,7 +271,7 @@ img {
   border-radius: 0.8rem;
   background-color: #fefefe;
   padding: 1.6rem;
-  margin-bottom: 1.6rem;
+  margin-bottom: 1.8rem;
   display: grid;
   grid-template-rows: repeat 3;
 }
