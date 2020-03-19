@@ -149,10 +149,10 @@ img {
 .logo-container > .logo {
   width: 100%;
 }
-@media (min-width: 320px) and (max-width: 900px) {
-  .logo-container {
-    padding-left: 3rem;
-  }
+.logo-container:hover {
+  transform: translateY(-0.3rem);
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
 }
 
 .mt-8 {

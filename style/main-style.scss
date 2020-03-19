@@ -292,6 +292,11 @@ button {
   & > .logo {
     width: 100%;
   }
+  &:hover {
+    transform: translateY(-0.3rem);
+    transition: all 0.15s ease-in-out;
+    cursor: pointer;
+  }
 
   @include sm {
     padding-left: 3rem;

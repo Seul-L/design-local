@@ -27,11 +27,38 @@
   display: flex;
   justify-content: space-between;
   padding: 4rem 0;
-  margin-top: 4rem;
+  margin-top: 2rem;
   overflow: hidden;
 
   @include sm {
     margin-top: 1rem;
+  }
+
+  .nav-card {
+    font-weight: 500;
+    padding: 0 0.5rem;
+
+    span {
+      color: $coral;
+      font-size: 2.2rem;
+      display: inline-block;
+    }
+
+    .left-arrow {
+      transform: rotate(180deg); 
+    }
+  }
+
+  .prev:hover {
+    transform: translatex(-0.5rem);
+    transition: all 0.15s ease-in-out;
+    cursor: pointer;
+  }
+
+  .next:hover {
+    transform: translatex(0.5rem);
+    transition: all 0.15s ease-in-out;
+    cursor: pointer;
   }
 }
 
@@ -41,15 +68,21 @@
   & > .logo {
     width: 100%;
   }
-
-  @include sm {
-    padding-left: 3rem;
+  &:hover {
+    transform: translateY(-0.3rem);
+    transition: all 0.15s ease-in-out;
+    cursor: pointer;
   }
 }
 
 // challenge brief page
 .mt-8 {
   margin-top: 8rem;
+
+  &:hover {
+    transform: translateY(-0.3rem);
+    transition: all 0.15s ease-in-out;
+  }
 }
 
 .about-org {
@@ -132,8 +165,8 @@
     }
   }
 
-  span {
-    margin-left: 2.4rem;
+  .note {
+    margin-top: 1.6rem;
     color: $grey;
     font-style: italic;
   }

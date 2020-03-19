@@ -135,13 +135,35 @@ img {
   display: flex;
   justify-content: space-between;
   padding: 4rem 0;
-  margin-top: 4rem;
+  margin-top: 2rem;
   overflow: hidden;
 }
 @media (min-width: 320px) and (max-width: 900px) {
   .container {
     margin-top: 1rem;
   }
+}
+.container .nav-card {
+  font-weight: 500;
+  padding: 0 0.5rem;
+}
+.container .nav-card span {
+  color: #ff8368;
+  font-size: 2.2rem;
+  display: inline-block;
+}
+.container .nav-card .left-arrow {
+  transform: rotate(180deg);
+}
+.container .prev:hover {
+  transform: translatex(-0.5rem);
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+}
+.container .next:hover {
+  transform: translatex(0.5rem);
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
 }
 
 .logo-container {
@@ -151,14 +173,18 @@ img {
 .logo-container > .logo {
   width: 100%;
 }
-@media (min-width: 320px) and (max-width: 900px) {
-  .logo-container {
-    padding-left: 3rem;
-  }
+.logo-container:hover {
+  transform: translateY(-0.3rem);
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
 }
 
 .mt-8 {
   margin-top: 8rem;
+}
+.mt-8:hover {
+  transform: translateY(-0.3rem);
+  transition: all 0.15s ease-in-out;
 }
 
 .about-org {
@@ -230,8 +256,8 @@ img {
   box-shadow: 0 0 1rem rgba(38, 83, 83, 0.733);
   cursor: pointer;
 }
-.button-container span {
-  margin-left: 2.4rem;
+.button-container .note {
+  margin-top: 1.6rem;
   color: #75757a;
   font-style: italic;
 }
