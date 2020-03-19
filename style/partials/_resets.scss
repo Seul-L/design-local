@@ -60,7 +60,7 @@ img {
   display: block;
 }
 
-.black-bg, .dark-bg {
+.black-bg, .dark-bg, .teal-bg {
   color: $white;
   font-size: 1.8rem;
   font-weight: 300;
@@ -73,6 +73,10 @@ img {
 
 .black-bg {
   background-color: $black;
+}
+
+.teal-bg {
+  background-color: $dark-teal;
 }
 
 .dark-bg {
