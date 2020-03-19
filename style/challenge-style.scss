@@ -100,6 +100,37 @@
   margin-top: 8rem;
 }
 
+.current-challenges {
+  h3 {
+    padding-top: 1.8rem;
+  }
+
+  .countdown {
+    margin-bottom: 2.4rem;
+
+    li {
+      display: inline-block;
+      text-align: center;
+      font-size: 1.8rem;
+      list-style-type: none;
+      padding: 2rem;
+      text-transform: uppercase;
+    }
+  
+    li span {
+      text-align: center;
+      font-weight: 500;
+      display: block;
+      font-size: 4.5rem;
+      padding-bottom: 0.8rem;
+    }
+
+    #msg {
+      font-size: 4.2rem;
+    }
+  }
+}
+
 .past-challenges {
   h2 {
     padding-top: 4rem;
@@ -123,6 +154,8 @@
   background-color: $white;
   padding: 1.6rem;
   margin-bottom: 1.6rem;
+  display: grid;
+  grid-template-rows: repeat (3);
   
   h3 {
     font-size: 2.4rem;
@@ -133,7 +166,7 @@
 
   .subtitle {
     color: $dark-teal;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     font-weight: 500;
     line-height: 2.4rem;
   }
@@ -153,10 +186,105 @@
 
   .card-footer {
     padding-top: 0.8rem;
+    align-self: flex-end;
 
+    button {
+      border: transparent;
+    }
+
+    .primary-button {
+      background-color: $teal;
+      color: $black;
+      font-weight: 500;
+      font-size: 1.6rem;
+      padding: 1rem 2.4rem;
+      border-radius: 0.4rem;
+    
+      &:hover {
+        transform: translateY(-0.4rem);
+        transition: all 0.15s ease-in-out;
+        box-shadow: 0 0 1rem rgba(87, 97, 97, 0.733);
+      }
+    }
   }
 }
 
+.involved-section {
+  h1 {
+    margin-top: 0;
+    margin-bottom: 3.2rem;
+  }
+
+  h3 {
+    margin-bottom: 0.8rem;
+    color: $light-blue;
+  }
+
+  .involve-container {
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+      margin-bottom: 0.8rem;
+      color: $light-blue;
+    }
+
+    button {
+      border: transparent;
+    }
+
+    .involve-btn {
+      display: flex;
+      justify-content: center;
+      padding: 1.2rem 3.2rem;
+      border-radius: 4rem;
+      background-color: $white;
+      margin-bottom: 3.2rem;
+      
+      span {
+        font-size: 1.6rem;
+        align-self: center;
+        font-weight: 500;
+        margin-right: 0.8rem;
+      }
+
+      img {
+        width: 2.4rem;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        align-self: center;
+      }
+
+      &:hover {
+        transform: translateY(-0.4rem);
+        transition: all 0.2s ease-in-out 0s;
+        cursor: pointer;
+        box-shadow: 0 0 1.2rem rgba(148, 169, 241, 0.64);
+      }
+    }
+  }  
+}
+
+.contact-logos {
+  display: flex;
+
+  a {
+    margin-right: 3rem;
+    &:hover {
+      border-radius: 1rem;
+      box-shadow: 0 0 12px rgba(148, 169, 241, 0.64);
+      background-color: transparent;
+      transform: translateY(-0.4rem);
+      transition: all 0.1s ease-in-out 0s;
+      cursor: pointer;
+    }
+
+    @include sm {
+      margin-right: 4rem;
+    }
+  }
+}
 
 // footer
 footer {
@@ -167,7 +295,7 @@ footer {
     position: absolute;
 
     @include lg {
-      width: 10%;
+      width: 8%;
       height: auto;
     }
 
@@ -178,7 +306,7 @@ footer {
 
   & > .bottom-blob {
     position: absolute;
-    margin: 0 20rem;
+    margin: 0 22rem;
     bottom: 0;
 
     @include lg {
@@ -197,8 +325,9 @@ footer {
     bottom: 0;
 
     @include lg {
-      width: 10%;
+      width: 8%;
       height: auto;
+      bottom: 0;
     }
 
     @include sm {
