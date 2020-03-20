@@ -326,11 +326,11 @@ button {
       margin-left: 2.4rem;
 
       a {
-        color: $light-grey;
+        color: $white;
+        border-bottom: 0.4rem solid #fae1a11c;
       }
 
       a:hover {
-        color: $white;
         border-bottom: 0.4rem solid $yellow;
         transition: all 0.15s ease-in-out;
         cursor: pointer;

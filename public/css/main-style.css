@@ -423,10 +423,10 @@ button:hover .button-text {
   margin-left: 2.4rem;
 }
 .nav-shortcut nav li a {
-  color: #dcdee0;
+  color: #fefefe;
+  border-bottom: 0.4rem solid #fae1a11c;
 }
 .nav-shortcut nav li a:hover {
-  color: #fefefe;
   border-bottom: 0.4rem solid #ffb800;
   transition: all 0.15s ease-in-out;
   cursor: pointer;
