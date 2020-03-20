@@ -56,16 +56,11 @@ hr {
   padding: 0;
 }
 
-i {
-  color: $white;
-  margin-right: 0.8rem;
-}
-
 img {
   display: block;
 }
 
-.black-bg, .dark-bg {
+.black-bg, .dark-bg, .teal-bg {
   color: $white;
   font-size: 1.8rem;
   font-weight: 300;
@@ -78,6 +73,10 @@ img {
 
 .black-bg {
   background-color: $black;
+}
+
+.teal-bg {
+  background-color: $dark-teal;
 }
 
 .dark-bg {
@@ -96,14 +95,6 @@ img {
   }
 }
 
-.primary-button {
-  background-color: $teal;
-  color: $black;
-  font-weight: 500;
-  font-size: 1.6rem;
-  padding: 1rem 2.4rem;
-  border-radius: 0.4rem;
-}
 // colours for text
 
 .coral {
