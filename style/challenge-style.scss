@@ -33,16 +33,49 @@
   }
 }
 
-.logo-container {
-  width: 20rem;
+.nav-shortcut {
+  display: flex;
+  justify-content: space-between;
   padding-top: 4rem;
-  & > .logo {
-    width: 100%;
+
+  .logo-container {
+    width: 20rem;
+
+    & > .logo {
+      width: 100%;
+      align-self: center;
+    }
+
+    &:hover {
+      transform: translateY(-0.3rem);
+      transition: all 0.15s ease-in-out;
+      cursor: pointer;
+    }
   }
-  &:hover {
-    transform: translateY(-0.3rem);
-    transition: all 0.15s ease-in-out;
-    cursor: pointer;
+
+  nav {
+    align-self: center;
+    
+    ul {
+      display: flex;
+    }
+
+    li {
+      list-style: none;
+      padding: 0.4rem 0.8rem;
+      border-radius: 0.8rem;
+      margin-left: 2.4rem;
+
+      a {
+        color: $white;
+      }
+
+      a:hover {
+        border-bottom: 0.4rem solid $yellow;
+        transition: all 0.15s ease-in-out;
+        cursor: pointer;
+      }
+    }
   }
 }
 

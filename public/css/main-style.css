@@ -266,7 +266,7 @@ button.join-us .button-text {
   padding: 0.9rem 0 0.5rem 0.5rem;
   margin: 0 0 0 2.7rem;
   color: #fefefe;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 2.4rem;
   text-align: center;
 }
@@ -279,7 +279,7 @@ button.join-us .button-text {
   }
   button.join-us .button-text {
     color: #19191e;
-    font-weight: 600;
+    font-weight: 500;
     background-color: transparent;
   }
 }
@@ -292,7 +292,7 @@ button:hover .circle .icon.arrow {
 }
 button:hover .button-text {
   color: #19191e;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .collapsible {
@@ -387,21 +387,53 @@ button:hover .button-text {
   }
 }
 
-.logo-container {
-  width: 20rem;
+.nav-shortcut {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   padding-top: 4rem;
 }
-.logo-container > .logo {
-  width: 100%;
+.nav-shortcut .logo-container {
+  width: 20rem;
 }
-.logo-container:hover {
+.nav-shortcut .logo-container > .logo {
+  width: 100%;
+  align-self: center;
+}
+.nav-shortcut .logo-container:hover {
   transform: translateY(-0.3rem);
   transition: all 0.15s ease-in-out;
   cursor: pointer;
 }
 @media (min-width: 320px) and (max-width: 900px) {
-  .logo-container {
-    padding-left: 3rem;
+  .nav-shortcut .logo-container {
+    padding-left: 3.2rem;
+  }
+}
+.nav-shortcut nav {
+  align-self: center;
+}
+.nav-shortcut nav ul {
+  display: flex;
+}
+.nav-shortcut nav li {
+  list-style: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.8rem;
+  margin-left: 2.4rem;
+}
+.nav-shortcut nav li a {
+  color: #dcdee0;
+}
+.nav-shortcut nav li a:hover {
+  color: #fefefe;
+  border-bottom: 0.4rem solid #ffb800;
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+}
+@media (min-width: 320px) and (max-width: 900px) {
+  .nav-shortcut nav {
+    display: none;
   }
 }
 
@@ -557,7 +589,7 @@ button:hover .button-text {
 .design-challenge .btn-container .challenge-btn > span:last-of-type,
 .design-challenge .btn-container .challenge-btn-disabled > span:last-of-type {
   font-size: 1.4rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 @media (min-width: 320px) and (max-width: 900px) {
   .design-challenge .btn-container .challenge-btn,
@@ -665,7 +697,7 @@ button:hover .button-text {
   transform: translateY(-0.4rem);
   transition: all 0.2s ease-in-out 0s;
   cursor: pointer;
-  box-shadow: 0 0 1.2rem rgba(148, 169, 241, 0.64);
+  box-shadow: 0 0 1rem #d9e1f0;
 }
 
 .contact-logos {

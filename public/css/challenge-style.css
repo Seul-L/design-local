@@ -142,15 +142,40 @@ img {
   }
 }
 
-.logo-container {
-  width: 20rem;
+.nav-shortcut {
+  display: flex;
+  justify-content: space-between;
   padding-top: 4rem;
 }
-.logo-container > .logo {
-  width: 100%;
+.nav-shortcut .logo-container {
+  width: 20rem;
 }
-.logo-container:hover {
+.nav-shortcut .logo-container > .logo {
+  width: 100%;
+  align-self: center;
+}
+.nav-shortcut .logo-container:hover {
   transform: translateY(-0.3rem);
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+}
+.nav-shortcut nav {
+  align-self: center;
+}
+.nav-shortcut nav ul {
+  display: flex;
+}
+.nav-shortcut nav li {
+  list-style: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.8rem;
+  margin-left: 2.4rem;
+}
+.nav-shortcut nav li a {
+  color: #fefefe;
+}
+.nav-shortcut nav li a:hover {
+  border-bottom: 0.4rem solid #ffb800;
   transition: all 0.15s ease-in-out;
   cursor: pointer;
 }
