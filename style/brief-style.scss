@@ -36,11 +36,16 @@
   .nav-card {
     font-weight: 500;
     padding: 0 0.5rem;
+    border-bottom: 0.4rem solid transparent;
 
     span {
-      color: $coral;
+      color: $dark-blue;
       font-size: 2.2rem;
       display: inline-block;
+    }
+
+    p {
+      color: $dark-blue;
     }
 
     .left-arrow {
@@ -49,6 +54,7 @@
   }
 
   .prev:hover {
+    border-bottom: 0.4rem solid $light-blue;
     transform: translatex(-0.5rem);
     transition: all 0.15s ease-in-out;
     cursor: pointer;
@@ -91,6 +97,10 @@
     margin-bottom: 1.2rem;
   }
 
+  p {
+    padding-top: 1.2rem;
+  }
+
   a {
     color: $dark-teal;
 
@@ -120,6 +130,11 @@
 
   p {
     line-height: 3rem;
+    padding-bottom: 1.2rem;
+  }
+
+  ul {
+    padding-left: 2.4rem;
   }
 
   .summary {

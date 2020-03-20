@@ -145,16 +145,21 @@ img {
 .container .nav-card {
   font-weight: 500;
   padding: 0 0.5rem;
+  border-bottom: 0.4rem solid transparent;
 }
 .container .nav-card span {
-  color: #ff8368;
+  color: #334c80;
   font-size: 2.2rem;
   display: inline-block;
+}
+.container .nav-card p {
+  color: #334c80;
 }
 .container .nav-card .left-arrow {
   transform: rotate(180deg);
 }
 .container .prev:hover {
+  border-bottom: 0.4rem solid #d9e1f0;
   transform: translatex(-0.5rem);
   transition: all 0.15s ease-in-out;
   cursor: pointer;
@@ -194,6 +199,9 @@ img {
   color: #19191e;
   margin-bottom: 1.2rem;
 }
+.about-org p {
+  padding-top: 1.2rem;
+}
 .about-org a {
   color: #054d49;
 }
@@ -219,6 +227,10 @@ img {
 }
 .brief-content p {
   line-height: 3rem;
+  padding-bottom: 1.2rem;
+}
+.brief-content ul {
+  padding-left: 2.4rem;
 }
 .brief-content .summary {
   border-radius: 0.8rem;
