@@ -16,7 +16,7 @@
   <title>Design.local</title>
 
   <!-- fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap" rel="stylesheet" />
 
   <!-- css -->
   <link href="public/css/main-style.css" rel="stylesheet" />
@@ -55,16 +55,9 @@
 
   <section class="black-bg">
     <section class="wrapper">
-      <div class="nav-shortcut">
-        <div class="logo-container">
-          <a href="/"><img class="logo" src="public/assets/logo-w.svg" alt="logo" /></a>
-        </div>
-        <nav>
-          <ul>
-            <li><a href="#challenges">Design Challenges</a></li>
-            <li><a href="#get-involved">Get Involved</a></li>
-          </ul>
-        </nav>
+      <div class="logo-container">
+        <a href="/">
+          <img class="logo" src="public/assets/logo-w.svg" alt="logo" /></a>
       </div>
       <section class="container">
         <div class="hero-txt">
@@ -102,7 +95,6 @@
     </section>
   </section>
   <!-- Hero section ends-->
-
   <section class="dark-bg">
     <section class="wrapper">
       <section class="container">
@@ -160,31 +152,58 @@
     </section>
   </section>
   <!-- quote 1 section ends -->
-  <section class="dark-bg">
-    <section class="wrapper how-it-works">
-      <h1>Our<span class="teal"> process</span> is simple.</h1>
-      <img class="infographic-h" src="public/assets/info-h.svg" alt="infographic-image" />
-      <img class="infographic-v" src="public/assets/info-v.svg" alt="infographic-image" />
 
-      <button type="button" class="collapsible">
-        <p>Details for organizations</p>
-        <span class="chevron bottom"></span>
-      </button>
-      <div class="content">
-        <ol>
-          <li>Start by filling out a <a href="https://forms.gle/VersXswD7wgpdzh4A" class="link-on-card" target="_blank">
-              design challenge
-              form</a></li>
-          <li>A Design.local team member will connect with you for an initial conversation</li>
-          <li>Once finalized, the design challenge will go live on the website for challengers to accept</li>
-          <li>Once a challenge is accepted, the team will be introduced and the framework established for completing the
-            challenge</li>
-          <li>Complete a pre-project survey</li>
-          <li>Establish a timeframe and contribution hours</li>
-          <li>The design challenge process is executed</li>
-          <li>Final report is presented</li>
-          <li>Complete a post-project follow up survey</li>
-        </ol>
+  <section class="wrapper how-it-works">
+    <h1>Our<span class="teal"> process</span> is simple.</h1>
+    <img class="infographic-h" src="public/assets/info-h.svg" alt="infographic-image" />
+    <img class="infographic-v" src="public/assets/info-v.svg" alt="infographic-image" />
+
+    <button type="button" class="collapsible">
+      <p>Details for organizations</p>
+      <span class="chevron bottom"></span>
+    </button>
+    <div class="content">
+      <ol>
+        <li>Start by filling out a <a href="https://forms.gle/VersXswD7wgpdzh4A" class="link-on-card" target="_blank">
+            design challenge
+            form</a></li>
+        <li>A Design.local team member will connect with you for an initial conversation</li>
+        <li>Once finalized, the design challenge will go live on the website for challengers to accept</li>
+        <li>Once a challenge is accepted, the team will be introduced and the framework established for completing the
+          challenge</li>
+        <li>Complete a pre-project survey</li>
+        <li>Establish a timeframe and contribution hours</li>
+        <li>The design challenge process is executed</li>
+        <li>Final report is presented</li>
+        <li>Complete a post-project follow up survey</li>
+      </ol>
+    </div>
+
+    <button type="button" class="collapsible">
+      <p>Details for problem solvers</p>
+      <span class="chevron bottom"></span>
+    </button>
+    <div class="content">
+      <ol>
+        <li>Checkout design challenges and accept the ones that interest you</li>
+        <li>Receive notification when your team has been formed</li>
+        <li>Connect with your team to introduce yourself and to review the design challenge brief and framework</li>
+        <li>Execute the design challenge in collaboration with your team and the organization for which the challenge
+          is
+          related</li>
+        <li>Produce a final solution and recommendations</li>
+        <li>Use the experience from this design challenge to create a case study that can be shared on Medium, your
+          portfolio or other social channels</li>
+        <li>Complete post-project survey</li>
+      </ol>
+    </div>
+  </section>
+  <!-- process section ends -->
+
+  <section class="wrapper">
+    <section class="container">
+      <div class="left image-container">
+        <img class="photos" src="public/assets/value-for-business.png" alt="photo of workshop" />
       </div>
 
       <button type="button" class="collapsible">
@@ -266,8 +285,8 @@
         </div>
       </section>
     </section>
+    <!-- not free work section ends -->
   </section>
-  <!-- not free work section ends -->
 
   <section class="black-bg">
     <section class="wrapper centred-txt">
@@ -282,7 +301,7 @@
   <!-- quote 2 section ends -->
 
   <section class="dark-bg">
-    <section id="challenges" class="wrapper design-challenge">
+    <section class="wrapper design-challenge">
       <h2>Design<span class="coral"> challenges</span></h2>
       <p>
         A design challenge is a response to a business problem. Design.local
@@ -310,34 +329,35 @@
           </button>
         </form>
       </div>
-    </section>
-    <!-- design challenge section ends -->
-    <hr />
-
-    <section class="wrapper">
-      <section id="get-involved" class="container involved-section">
-        <div class="left">
-          <h1>
-            Interested in<br />
-            getting<span class="blue"> Involved?</span>
-          </h1>
+      <div class="right">
+        <div class="involve-container">
+          <h3>Join our slack community</h3>
+          <form action="http://bit.ly/designdotlocal-slack" target="_blank">
+            <button class="involve-btn" type="submit">
+              <span>Sign up</span><img src="public/assets/slack-logo.svg" alt="slack-logo">
+            </button>
+          </form>
+          <h3>Join our admin volunteer team</h3>
+          <form action="http://bit.ly/designdotlocal-slack" target="_blank">
+            <button class="involve-btn" type="submit">
+              <span>Help us grow!</span>
+            </button>
+          </form>
+        </div>
+        <h3>Check out our social media</h3>
+        <div class="contact-logos">
+          <a href="https://www.instagram.com/designdotlocal" target="_blank"><img src="public/assets/instagram.svg"
+              alt="instagram-logo" /></a>
+          <a href="https://twitter.com/designdotlocal" target="_blank"><img src="public/assets/twitter.svg"
+              alt="twitter-logo" /></a>
+          <a href="https://www.linkedin.com/company/design-local" target="_blank"><img src="public/assets/linkedin.svg"
+              alt="linkedin-logo" /></a>
         </div>
         <div class="right">
-          <div class="involve-container">
-            <h3>Join our slack community</h3>
-            <form action="http://bit.ly/designdotlocal-slack" target="_blank">
-              <button class="involve-btn" type="submit">
-                <span>Sign up</span><img src="public/assets/slack-logo.svg" alt="slack-logo">
-              </button>
-            </form>
-            <h3>Join our admin volunteer team</h3>
-            <form action="https://forms.gle/QE7A8fNzzvDDP8mA9" target="_blank">
-              <button class="involve-btn" type="submit">
-                <span>Help us grow!</span>
-              </button>
-            </form>
-          </div>
-          <h3>Check out our social media</h3>
+          <a href="http://bit.ly/designdotlocal-slack" target="_blank">
+            <h2>Join our slack community</h2>
+          </a>
+          <p>& Check out our other social media</p>
           <div class="contact-logos">
             <a href="https://www.instagram.com/designdotlocal" target="_blank"><img src="public/assets/instagram.svg"
                 alt="instagram-logo" /></a>
@@ -346,10 +366,10 @@
             <a href="https://www.linkedin.com/company/design-local" target="_blank"><img
                 src="public/assets/linkedin.svg" alt="linkedin-logo" /></a>
           </div>
-      </section>
     </section>
   </section>
   <!-- contact section ends -->
+  </section>
 
   <footer>
     <img class="left-blob" src="public/assets/coral-left.svg" alt="left-blob" />

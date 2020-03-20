@@ -158,7 +158,7 @@ button {
       padding: 0.9rem 0 0.5rem 0.5rem;
       margin: 0 0 0 2.7rem;
       color: $white;
-      font-weight: 500;
+      font-weight: 600;
       line-height: 2.4rem;
       text-align: center;
     }
@@ -171,7 +171,7 @@ button {
 
       .button-text {
         color: $black;
-        font-weight: 500;
+        font-weight: 600;
         background-color: transparent;
       }
     }
@@ -188,7 +188,7 @@ button {
     }
     .button-text {
       color: $black;
-      font-weight: 500;
+      font-weight: 600;
     }
   }
 }
@@ -286,60 +286,15 @@ button {
   }
 }
 
-
-.nav-shortcut {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.logo-container {
+  width: 20rem;
   padding-top: 4rem;
-
-  .logo-container {
-    width: 20rem;
-
-    & > .logo {
-      width: 100%;
-      align-self: center;
-    }
-
-    &:hover {
-      transform: translateY(-0.3rem);
-      transition: all 0.15s ease-in-out;
-      cursor: pointer;
-    }
-
-    @include sm {
-      padding-left: 3.2rem;
-    }
+  & > .logo {
+    width: 100%;
   }
 
-  nav {
-    align-self: center;
-    
-    ul {
-      display: flex;
-    }
-
-    li {
-      list-style: none;
-      padding: 0.4rem 0.8rem;
-      border-radius: 0.8rem;
-      margin-left: 2.4rem;
-
-      a {
-        color: $white;
-        border-bottom: 0.4rem solid #fae1a11c;
-      }
-
-      a:hover {
-        border-bottom: 0.4rem solid $yellow;
-        transition: all 0.15s ease-in-out;
-        cursor: pointer;
-      }
-    }
-
-    @include sm {
-      display: none;
-    }
+  @include sm {
+    padding-left: 3rem;
   }
 }
 
@@ -407,14 +362,14 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-top: 2rem;
 
   @include sm {
-    margin: 0 auto;
+    padding: 0 auto;
     padding-top: 2rem;
 
     h1 {
-      padding: 2rem auto;
-      padding-left: 1.8rem;
+      margin: 2rem auto;
     }
   }
 
@@ -441,7 +396,7 @@ button {
   padding-top: 4rem;
 
   @include sm {
-    margin: 0 auto;
+    padding: 0 auto;
     h2,
     p,
     .caption-txt {
@@ -491,7 +446,7 @@ button {
 
         &:last-of-type {
           font-size: 1.4rem;
-          font-weight: 400;
+          font-weight: 300;
         }
       }
       
@@ -523,57 +478,24 @@ button {
   }
 }
 
-//involve section
-.left,
-.right {
-  width: 50%;
-
-  @include sm {
-    width: 80%;
-    margin: 0 auto;
-  }
-}
-
-.right {
-  margin-left: 4rem;
-  p:last-of-type {
-    margin-top: 1.5rem;
-  }
-
-  @include sm {
-    margin-left: auto;
-  }
-}
-
 .involved-section {
   h1 {
     margin-top: 0;
     margin-bottom: 3.2rem;
-
-    @include sm {
-      font-size: 3.2rem;
-      line-height: 4.2rem;
-    }
   }
 
   h3 {
     margin-bottom: 0.8rem;
     color: $light-blue;
-
-    @include sm {
-      font-weight: 400;
-      font-size: 1.8rem;
-      line-height: 2.8rem;
-      margin-bottom: 1.6rem;
-    }
   }
 
   .involve-container {
     display: flex;
     flex-direction: column;
 
-    button {
-      border: transparent;
+    h3 {
+      margin-bottom: 0.8rem;
+      color: $light-blue;
     }
 
     .involve-btn {
@@ -603,7 +525,7 @@ button {
         transform: translateY(-0.4rem);
         transition: all 0.2s ease-in-out 0s;
         cursor: pointer;
-        box-shadow: 0 0 1rem $light-blue;
+        box-shadow: 0 0 1.2rem rgba(148, 169, 241, 0.64);
       }
     }
   }  
@@ -629,6 +551,69 @@ button {
   }
 }
 
+// design challenge page
+// .mt-8 {
+//   margin-top: 8rem;
+// }
+
+// .past-challenges {
+//   h2 {
+//     padding-top: 4rem;
+//     color: $blue;
+//   }
+// }
+
+// .gallery {
+//   display: grid;
+//   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+//   grid-auto-rows: auto;
+//   grid-gap: 3.2rem;
+  
+//   @include sm {
+//     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+//   }
+// }
+
+// .card {
+//   border-radius: 0.8rem;
+//   background-color: $white;
+//   padding: 1.6rem;
+//   margin-bottom: 1.6rem;
+  
+//   h3 {
+//     font-size: 2.4rem;
+//     font-weight: 500;
+//     line-height: 4.8rem;
+//     color: $black;
+//   }
+
+//   .subtitle {
+//     color: $dark-teal;
+//     font-size: 1.6rem;
+//     font-weight: 500;
+//     line-height: 2.4rem;
+//   }
+
+//   .card-body {
+//     color: $dark-grey;
+//     font-size: 1.6rem;
+//     margin: 2.4rem auto;
+//     line-height: 2.4rem;
+//     font-weight: 400;
+
+//     p:first-of-type {
+//       margin-bottom: 1.2rem;
+//       color: $grey;
+//     }
+//   }
+
+//   .card-footer {
+//     padding-top: 0.8rem;
+
+//   }
+// }
+
+
 // footer
 footer {
   background-color: $black;
@@ -638,7 +623,7 @@ footer {
     position: absolute;
 
     @include lg {
-      width: 8%;
+      width: 10%;
       height: auto;
     }
 
@@ -668,9 +653,8 @@ footer {
     bottom: 0;
 
     @include lg {
-      width: 8%;
+      width: 8.5%;
       height: auto;
-      bottom: 0;
     }
 
     @include sm {
