@@ -79,7 +79,6 @@
   }
 }
 
-// design challenge page
 .mt-8 {
   margin-top: 8rem;
 }
@@ -214,6 +213,11 @@
 
     button {
       border: transparent;
+    }
+
+    button:focus {
+      background-color: #00bba5;
+      outline: transparent;
     }
 
     .primary-button {

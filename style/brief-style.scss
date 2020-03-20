@@ -142,6 +142,11 @@
     border: transparent;
   }
 
+  button:focus {
+    background-color: #00bba5;
+    outline: transparent;
+  }
+
   .primary-button {
     background-color: $dark-teal;
     color: $white;

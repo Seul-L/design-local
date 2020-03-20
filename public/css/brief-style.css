@@ -237,6 +237,10 @@ img {
 .button-container button {
   border: transparent;
 }
+.button-container button:focus {
+  background-color: #00bba5;
+  outline: transparent;
+}
 .button-container .primary-button {
   background-color: #054d49;
   color: #fefefe;

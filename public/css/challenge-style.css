@@ -306,6 +306,10 @@ img {
 .card .card-footer button {
   border: transparent;
 }
+.card .card-footer button:focus {
+  background-color: #00bba5;
+  outline: transparent;
+}
 .card .card-footer .primary-button {
   background-color: #00cab2;
   color: #19191e;
