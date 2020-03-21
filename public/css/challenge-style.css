@@ -271,6 +271,7 @@ img {
   font-weight: 500;
   line-height: 4.8rem;
   color: #19191e;
+  padding-top: 0.8rem;
 }
 @media (min-width: 320px) and (max-width: 900px) {
   .card h3 {
@@ -302,6 +303,7 @@ img {
 .card .card-footer {
   padding-top: 0.8rem;
   align-self: flex-end;
+  display: flex;
 }
 .card .card-footer button {
   border: transparent;
@@ -317,12 +319,20 @@ img {
   font-size: 1.6rem;
   padding: 1rem 2.4rem;
   border-radius: 0.4rem;
+  margin-right: 0.8rem;
 }
 .card .card-footer .primary-button:hover {
   transform: translateY(-0.4rem);
   transition: all 0.15s ease-in-out;
   box-shadow: 0 0 1rem rgba(38, 83, 83, 0.733);
   cursor: pointer;
+}
+.card .card-footer .note {
+  padding-top: 0.4rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #75757a;
+  font-style: italic;
 }
 
 .left,

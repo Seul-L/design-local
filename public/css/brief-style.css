@@ -267,6 +267,14 @@ img {
   box-shadow: 0 0 1rem rgba(38, 83, 83, 0.733);
   cursor: pointer;
 }
+.button-container .primary-button-disabled {
+  background-color: #75757a;
+  color: #fefefe;
+  font-weight: 500;
+  font-size: 1.6rem;
+  padding: 1.2rem 4.8rem;
+  border-radius: 0.4rem;
+}
 .button-container .note {
   margin-top: 1.6rem;
   color: #75757a;
