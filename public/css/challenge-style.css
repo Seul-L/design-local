@@ -188,6 +188,9 @@ img {
   padding-top: 1.8rem;
   color: #fefefe;
 }
+.current-challenges .mb-24 {
+  margin-bottom: 2.4rem;
+}
 .current-challenges .countdown {
   margin-top: 2.4rem;
   margin-bottom: 3.2rem;
