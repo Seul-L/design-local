@@ -232,6 +232,9 @@ img {
 .brief-content ul {
   padding-left: 2.4rem;
 }
+.brief-content li {
+  padding-bottom: 1rem;
+}
 .brief-content .summary {
   border-radius: 0.8rem;
   background-color: #a9e2db;
