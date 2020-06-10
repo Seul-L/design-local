@@ -184,6 +184,11 @@ img {
   margin-top: 8rem;
 }
 
+.blue {
+  padding-top: 2rem;
+  color: #839cce !important;
+}
+
 .current-challenges h3 {
   padding-top: 1.8rem;
   color: #fefefe;
