@@ -189,9 +189,11 @@ img {
   color: #839cce !important;
 }
 
-.current-challenges h3 {
-  padding-top: 1.8rem;
+.current-challenges h2 {
   color: #fefefe;
+}
+.current-challenges ul {
+  margin-left: 2.4rem;
 }
 .current-challenges .mb-24 {
   margin-bottom: 2.4rem;
