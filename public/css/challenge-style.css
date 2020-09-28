@@ -244,6 +244,46 @@ img {
   font-size: 4.2rem;
 }
 
+.submit-challenges h2 {
+  padding-top: 4rem;
+  color: #00cab2;
+  text-align: center;
+}
+@media (min-width: 320px) and (max-width: 900px) {
+  .submit-challenges h2 {
+    padding-top: 2rem;
+    font-size: 2.4rem;
+  }
+}
+.submit-challenges .btn-container {
+  margin: auto;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  width: 26rem;
+}
+.submit-challenges .btn-container > form button {
+  background-color: #fefefe;
+  padding: 1rem 4rem;
+  border-radius: 0.8rem;
+  border: 0.2rem solid transparent;
+  font-size: 1.8rem;
+}
+.submit-challenges .btn-container > form button:hover {
+  transform: translateY(-0.2rem);
+  transition: all 0.1s ease-in-out;
+  border: 0.2rem solid #00cab2;
+  cursor: pointer;
+}
+@media (min-width: 320px) and (max-width: 900px) {
+  .submit-challenges .btn-container {
+    margin: auto;
+    margin-top: 1rem;
+  }
+  .submit-challenges .btn-container form {
+    margin-bottom: 2rem;
+  }
+}
+
 .past-challenges h2 {
   padding-top: 4rem;
   color: #839cce;
