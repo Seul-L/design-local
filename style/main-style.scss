@@ -10,6 +10,7 @@
   transition: $property $duration $ease;
 }
 // start styling in this scss file and do not touch css files (It's auto generated).
+// when saving, you mush use "sass --watch style/:public/css/"
 
 .wrapper {
   max-width: 900px;
